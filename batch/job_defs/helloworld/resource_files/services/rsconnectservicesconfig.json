@@ -1,0 +1,56 @@
+{
+    "services": {
+      "rsConnectService": {
+        "serviceSpecific": {
+          "RDPHostBase": "http://@@RDP_REST_API_SVC_NAME@@:@@RDP_REST_API_SVC_PORT@@/",
+          "DAMInternalHost": "http://@@DAM_REST_API_SVC_NAME@@:@@DAM_REST_API_SVC_PORT@@/",
+          "ConnectorHostBase": "http://imp-exp-rest:9095/",
+          "hdfsPath": "/rdp/%s/binaryobject",
+          "isRelationshipResolutionEnabled": "true",
+          "isEventRestCallsEnabled": "false",
+          "maxRDPServiceCallLimitMilliseconds": "200",
+          "maxCollectBoltLimitMilliseconds": "100",
+          "maxExtractBoltLimitMilliseconds": "200",
+          "maxTransformLoadPublishBoltsLimitMilliseconds": "50",
+          "StatusEventEnabled": "true",
+          "StatusEventEnabledForStartEvent": "false",
+          "AmazonS3accessId": "AKIAI3CPAIFSMXJY54EQ",
+          "AmazonS3secretKey": "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",
+          "AmazonKinesisAccessId": "AKIAIO7WUB5E3XD2CWNA",
+          "AmazonKinesisSecretKey": "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",
+          "AmazonEC2IamRole": "@@AMAZON_EC2_IAMROLE@@",
+          "modelCacheEnabled": "true",
+          "modelCacheExpirationMs": "600000",
+          "modelCacheMaxEntries": "1000",
+          "defaultMaxRecords": "200",
+          "batchSizeLimit": "10000",
+          "profileCacheEnabled": "true",
+          "profileCacheExpirationMs": "120000",
+          "profileCacheMaxEntries": "1000",
+          "keyValueCacheEnabled": "true",
+          "keyValueCacheExpirationMs": "300000",
+          "keyValueCacheMaxEntries": "1000",
+          "streamCacheEnabled": "true",
+          "streamCacheExpirationMs": "1200000",
+          "streamCacheMaxEntries": "1000",
+          "attributeMappingsCacheEnabled": "true",
+          "attributeMappingsCacheExpirationMs": "300000",
+          "attributeMappingsCacheMaxEntries": "1000",
+          "AzureEvenHubEnabled": true,
+          "AuthTokenCacheEnabled": "true",
+          "AuthTokenCacheExpirationMs": "1800000",
+          "AuthTokenCacheMaxEntries": "1000",
+          "integrationStatusCacheEnabled": "false",
+          "integrationStatusCacheExpirationMs": "60000",
+          "integrationStatusCacheMaxEntries": "128",
+          "classLoaderCacheEnabled": "true",
+          "classLoaderCacheExpirationMs": "86400000",
+          "classLoaderCacheMaxEntries": "1000",
+          "supportExtensionJarBackWardCompatibility": "false",
+          "maxTimeToValidateArtifact": "600000",
+          "sftpfileSizeLimitInbytes": "104857600"
+        }
+      }
+    }
+  }
+  

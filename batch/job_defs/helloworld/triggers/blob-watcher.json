@@ -1,0 +1,7 @@
+{
+    "id": "blob-upload",
+    "type": "blob-watcher",
+    "job_def": "simple-job-py",
+    "storage_account_resource": "tenant",
+    "container": "customer-uploads"
+}

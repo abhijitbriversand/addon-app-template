@@ -1,0 +1,14 @@
+{
+    "id": "helloworld",
+    "job_def": "helloworld",
+    "runtime": "java",
+    "jar_name": "helloworld-1.0.0-SNAPSHOT.jar",
+    "main_class": "com.riversand.examples.helloworld.HelloworldMain",
+    "code_path": "../../../source/java/helloworld/target",
+    "rdp_task_status": {
+        "rdp_task_type": "",
+        "file_stream_type": "defaultAzureBlobStore"
+    },
+    "input_files": [],
+    "output_files": []
+}

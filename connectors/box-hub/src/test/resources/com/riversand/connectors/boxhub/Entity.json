@@ -1,0 +1,65 @@
+{
+  "id": "_60nbrfTQw-iT0V-4_pKeg",
+  "name": "_EMPTY",
+  "type": "sku",
+  "properties": {
+    "recordId": "d01689d0-9823-42b7-a7e9-ec4db6bce2d2",
+    "rowNo": 7854,
+    "createdService": "entityManageService",
+    "createdBy": "connectoradmin@riversand.com_user",
+    "createdDate": "2019-03-19T05:07:59.848-0500",
+    "modifiedService": "entityManageService",
+    "modifiedBy": "gdsnadmin@riversand.com_user",
+    "modifiedDate": "2019-10-31T16:53:33.151-0500"
+  },
+  "data": {
+    "attributes": {
+      "MDM ID": {
+        "values": [
+          {
+            "source": "internal",
+            "locale": "en-US",
+            "id": "240611b8-57d6-4f72-b5b7-6a9c3c119897",
+            "value": "Test19Mar7853"
+          }
+        ]
+      },
+      "SKU Name": {
+        "values": [
+          {
+            "source": "internal",
+            "locale": "en-US",
+            "id": "575db169-b5db-4e0c-b527-4d1e31871848",
+            "value": "Test19Mar7853"
+          }
+        ]
+      }
+    },
+    "relationships": {
+      "hasimages": [
+        {
+          "relTo": {
+            "id": "Ty8V1JIXRn2G2WHHYxQCEg",
+            "type": "image"
+          },
+          "id": "hasimages_Ty8V1JIXRn2G2WHHYxQCEg",
+          "properties": {
+            "direction": "both",
+            "relationshipType": "hasimages"
+          }
+        },
+        {
+          "relTo": {
+            "id": "cJ1g65hZQkimBX81dQz41A",
+            "type": "image"
+          },
+          "id": "hasimages_cJ1g65hZQkimBX81dQz41A",
+          "properties": {
+            "direction": "both",
+            "relationshipType": "hasimages"
+          }
+        }
+      ]
+    }
+  }
+}

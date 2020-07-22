@@ -1,0 +1,874 @@
+{
+    "resourceManageService": {
+      "resources": {
+        "text": {
+          "messages": {
+            "E0001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The index name not found for DataObject type {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "index not found"
+                }
+              }
+            },
+            "E0002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Exception processing message: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "exception stack trace is the parameter"
+                }
+              }
+            },
+            "E0003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in Event {} : {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameter"
+                }
+              }
+            },
+            "E0004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in DataObject {} : {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 2 parameters"
+                }
+              }
+            },
+            "E0005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in processing Events {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameter"
+                }
+              }
+            },
+            "E0018": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject with eid=[{}] not found. DataObjectType=[{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 2 parameters"
+                }
+              }
+            },
+            "E0019": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Create Entities failed for create DataObject {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "E0020": {
+              "locales": {
+                "en-US": {
+                  "messageText": "delete DataObject failed for delete DataObject Request {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "E0021": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Bulk Entities Creation failed, Deleting the created Entities",
+                  "messageType": "ERROR",
+                  "messageDesc": "has no parameters"
+                }
+              }
+            },
+            "E0022": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Exception while Creating XContentBuilder in SearchManagerDA",
+                  "messageType": "ERROR",
+                  "messageDesc": "has no parameters"
+                }
+              }
+            },
+            "E0023": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Elastic Client Instance is null",
+                  "messageType": "ERROR",
+                  "messageDesc": "has no parameters"
+                }
+              }
+            },
+            "E0024": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Create client method in SearchManagerDA returned null",
+                  "messageType": "ERROR",
+                  "messageDesc": "has no parameters"
+                }
+              }
+            },
+            "E0025": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unknown ElasticSearch node {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "E0026": {
+              "locales": {
+                "en-US": {
+                  "messageText": "VERSION CONFLICT WHILE EXECUTING UPDATE for eid {} - retrying once more",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "E0027": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Update failed for DataObject with ID {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "E0028": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Update RETRY failed for DataObject with ID {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "E0029": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Request could not be completed successfully.",
+                  "messageType": "INFO",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "D0001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "eid=[{}]",
+                  "messageType": "debug",
+                  "messageDesc": "prints eid, takes one parameter"
+                }
+              }
+            },
+            "D0002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Total events Generated {}",
+                  "messageType": "debug",
+                  "messageDesc": "takes one parameter"
+                }
+              }
+            },
+            "D0003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObjectType=[{}]",
+                  "messageType": "debug",
+                  "messageDesc": "takes one parameter"
+                }
+              }
+            },
+            "D0004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObjectAction=[{}]",
+                  "messageType": "debug",
+                  "messageDesc": "takes one parameter"
+                }
+              }
+            },
+            "D0005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "generated manageService request: {}",
+                  "messageType": "debug",
+                  "messageDesc": "takes one parameter"
+                }
+              }
+            },
+            "D0008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Requesting to {} DataObject [eid={}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 2 parameters"
+                }
+              }
+            },
+            "D0009": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject creation successful at Line#{}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "D0010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject creation Failed at Line#{}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "D0011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Requesting to get DataObject [eid={}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "D0012": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Requesting to update DataObject [eid={}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "D0013": {
+              "locales": {
+                "en-US": {
+                  "messageText": "index response for create DataObject {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "D0014": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Adding DataObject to bulkRequest [eid={}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "D0015": {
+              "locales": {
+                "en-US": {
+                  "messageText": "transportClientInstance is null as TransportClient.builder().settings(settings).build() returned null",
+                  "messageType": "DEBUG",
+                  "messageDesc": "has 1 parameters"
+                }
+              }
+            },
+            "I0002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject action is read. Hence simply acknowledging and not handling it.",
+                  "messageType": "INFO",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "I0003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject action is other than create, delete and read. Hence updating it.",
+                  "messageType": "INFO",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "I0004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject Operation Message acknowledging success",
+                  "messageType": "INFO",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "I0005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject Operation Message acknowledging failure",
+                  "messageType": "INFO",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "I0006": {
+              "locales": {
+                "en-US": {
+                  "messageText": "isManageEventsEnabled flag is false, so not generating events for eid [{}] DataObjectAction [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "has 2 parameters"
+                }
+              }
+            },
+            "I0007": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataObject with eid=[{}] is found. DataObjectType=[{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "has 2 parameters"
+                }
+              }
+            },
+            "I0008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The document has been created",
+                  "messageType": "INFO",
+                  "messageDesc": "has no parameters"
+                }
+              }
+            },
+            "I0009": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The document came for create but was updated",
+                  "messageType": "INFO",
+                  "messageDesc": "has no parameters"
+                }
+              }
+            },
+            "I0010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Bulk Entities Creation Succeeded, created {} events",
+                  "messageType": "INFO",
+                  "messageDesc": "has 4 parameters"
+                }
+              }
+            },
+            "I0011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entity has been submitted for create with entity Id : {}. Please check back after 1 min",
+                  "messageType": "INFO",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "I0012": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No objects found",
+                  "messageType": "INFO",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "I0013": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entity has been submitted for update with entity Id : {}. Please check back after 1 min",
+                  "messageType": "INFO",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "T0001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Generating DataObject Error",
+                  "messageType": "trace",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "T0002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Completed DataObject Error {}",
+                  "messageType": "trace",
+                  "messageDesc": "1 parameter"
+                }
+              }
+            },
+            "T0003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Generating Event Error",
+                  "messageType": "trace",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "T0004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Completed Event Error {}",
+                  "messageType": "trace",
+                  "messageDesc": "1 parameter"
+                }
+              }
+            },
+            "E0009": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unable to find rule: '{}' provided in the mapping.",
+                  "messageType": "error",
+                  "messageDesc": "Rule is defined in the mapping but not available in the system."
+                }
+              }
+            },
+            "E0010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unable to find business condition: '{}' provided in the mapping.",
+                  "messageType": "error",
+                  "messageDesc": "Business condition is defined in the mapping but not available in the system."
+                }
+              }
+            },
+            "E0011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error While Sending Notification to client '{}'",
+                  "messageType": "error",
+                  "messageDesc": "Error While Sending Notification."
+                }
+              }
+            },
+            "D0016": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Evaluating rules for request complete. Evaluation Result Details: {}",
+                  "messageType": "debug",
+                  "messageDesc": "takes one parameter"
+                }
+              }
+            },
+            "E0101": {
+              "locales": {
+                "en-US": {
+                  "messageText": "<h1 align=\"center\">Internal Server Error</h1><h3> Unable to connect to elastic search.</h3>",
+                  "messageType": "ERROR",
+                  "messageDesc": "Elastic search connection issue"
+                }
+              }
+            },
+            "E0102": {
+              "locales": {
+                "en-US": {
+                  "messageText": "<h1 align=\"center\">Internal Server Error</h1> <h3>Tenant Auth Key not present for tenantId: {}</h3>",
+                  "messageType": "ERROR",
+                  "messageDesc": "tenant auth key not found"
+                }
+              }
+            },
+            "E0103": {
+              "locales": {
+                "en-US": {
+                  "messageText": "<h1 align=\"center\">Internal Server Error</h1> <h3>Unable to understand tenant config path for tenantId: {}</h3>",
+                  "messageType": "ERROR",
+                  "messageDesc": "tenant config path not present in jigsaw config"
+                }
+              }
+            },
+            "E0301": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Could not Activate Profiler",
+                  "messageType": "ERROR",
+                  "messageDesc": "default"
+                }
+              }
+            },
+            "E0302": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Could not deactivate Profiler",
+                  "messageType": "ERROR",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "E0303": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Could not log entry method",
+                  "messageType": "ERROR",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "E0304": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Could not log exit method",
+                  "messageType": "ERROR",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "E0305": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Property Name can not be empty",
+                  "messageType": "ERROR",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "E0306": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Property Value can not be empty",
+                  "messageType": "ERROR",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "E0307": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Message code and serviceName can not be null",
+                  "messageType": "ERROR",
+                  "messageDesc": "no parameter"
+                }
+              }
+            },
+            "E0308": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in logging message code: {} for service: {} and tenant: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "3 parameter"
+                }
+              }
+            },
+            "W0301": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ThreadContext does not contain startTime",
+                  "messageType": "Warn",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "W0302": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ThreadContext does not contain methodList",
+                  "messageType": "Warn",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "W0303": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Skipping method [{}] (No Entry logged)",
+                  "messageType": "Warn",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "W0304": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Skipping method [{}] at time (No Exit logged)",
+                  "messageType": "Warn",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "D0301": {
+              "locales": {
+                "en-US": {
+                  "messageText": "In method [{}] with Params({})",
+                  "messageType": "Warn",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "T0301": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Activating Profiler",
+                  "messageType": "Trace",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "T0302": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Total time taken by this activity is {}ms",
+                  "messageType": "Trace",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "T0303": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entering method [{}]",
+                  "messageType": "Trace",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "T0304": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Exit from method [{}] with inclusive time {}ms",
+                  "messageType": "Trace",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "T0305": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Exit from method [{}]",
+                  "messageType": "Trace",
+                  "messageDesc": ""
+                }
+              }
+            },
+            "RSC1001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity transformation failed with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "The entity transformation failed with error: %s"
+                }
+              }
+            },
+            "RSC1002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Binary object has been submitted for create with work automation id : %s. Please check back after 10 mins.",
+                  "messageType": "INFO",
+                  "messageDesc": "Binary object has been submitted for create with work automation id : %s. Please check back after 10 mins."
+                }
+              }
+            },
+            "RSC1003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The file process failed with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "The file process failed with error:"
+                }
+              }
+            },
+            "RSC1004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Onboarding task has started.",
+                  "messageType": "INFO",
+                  "messageDesc": "This puts a message to the Kafka topic for Storm processing."
+                }
+              }
+            },
+            "RSC1005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Onboarding task has completed.",
+                  "messageType": "INFO",
+                  "messageDesc": "A new message for onboarding is successfully published to Kafka. Storm topologies will process the message."
+                }
+              }
+            },
+            "RSC1006": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Distribution task has started.",
+                  "messageType": "INFO",
+                  "messageDesc": "This puts a message in the Kafka topic for Storm processing."
+                }
+              }
+            },
+            "RSC1007": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Distribution task has completed.",
+                  "messageType": "INFO",
+                  "messageDesc": "A new message for onboarding is successfully published to Kafka topic. Storm topologies will process the message."
+                }
+              }
+            },
+            "RSC1008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Task has read data from the source.",
+                  "messageType": "INFO",
+                  "messageDesc": "Inbound Topology - Inbound bolt read message from tropic."
+                }
+              }
+            },
+            "RSC1009": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Task has persisted data read from the source",
+                  "messageType": "INFO",
+                  "messageDesc": "Inbound Channel persisted data successfully."
+                }
+              }
+            },
+            "RSC1010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to process inbound channel: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Refer log file for details of the exception."
+                }
+              }
+            },
+            "RSC1011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to process transform: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Refer log file for details of the exception."
+                }
+              }
+            },
+            "RSC1012": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to process outbound channel: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Refer log file for details of the exception."
+                }
+              }
+            },
+            "RSC1013": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Inbound task has started",
+                  "messageType": "INFO",
+                  "messageDesc": "Inbound bolt started."
+                }
+              }
+            },
+            "RSC1014": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Inbound task has completed",
+                  "messageType": "INFO",
+                  "messageDesc": "Inbound bolt completed."
+                }
+              }
+            },
+            "RSC1015": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Extract-transform-load task has started.",
+                  "messageType": "INFO",
+                  "messageDesc": "Transform bolt read message from Transform Topic."
+                }
+              }
+            },
+            "RSC1016": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Extract-transform-load task has completed, recordCount = %d.",
+                  "messageType": "INFO",
+                  "messageDesc": "Transform bolt has completed."
+                }
+              }
+            },
+            "RSC1017": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Outbound task has started.",
+                  "messageType": "INFO",
+                  "messageDesc": "Outbound bolt read message from Outbound Topic."
+                }
+              }
+            },
+            "RSC1018": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Outbound task has completed.",
+                  "messageType": "INFO",
+                  "messageDesc": "Outbound bolt has completed."
+                }
+              }
+            },
+            "RSC1019": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Folder connector has submitted task process file = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "Folder connector finished - pushed message to Inbound Topic."
+                }
+              }
+            },
+            "RSC1020": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Folder connector did not find any files to process, folder = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "Folder connector did not find any files to process, folder = %s"
+                }
+              }
+            },
+            "RSC1021": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity import task has been queued.",
+                  "messageType": "INFO",
+                  "messageDesc": "Process REST API has published message to transform topic."
+                }
+              }
+            },
+            "RSC1022": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity import task is received for processing.",
+                  "messageType": "INFO",
+                  "messageDesc": "Process REST API - import task is received for processing"
+                }
+              }
+            },
+            "RSC1023": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to transform record, index =  %s: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "System had a problem transforming a record found in the source."
+                }
+              }
+            },
+            "RSC1024": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Invalid transform outbound format configuration, type = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Profile mapping configuration is invalid, outbound format configuration is not supported."
+                }
+              }
+            },
+            "RSC1025": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity export task has been queued.",
+                  "messageType": "INFO",
+                  "messageDesc": "Publish REST API has published message to inbound topic."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

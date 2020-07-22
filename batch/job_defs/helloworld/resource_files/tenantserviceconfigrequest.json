@@ -1,0 +1,20 @@
+{ 
+    "params": { 
+      "query": { 
+        "filters": { 
+          "typesCriterion": [ 
+            "tenantserviceconfig" 
+          ] 
+        }, 
+        "id": "TENANT" 
+      }, 
+      "fields": { 
+        "attributes": [ 
+          "_ALL" 
+        ] 
+      }, 
+      "options": { 
+        "totalRecords": 1   
+      } 
+    } 
+   } 

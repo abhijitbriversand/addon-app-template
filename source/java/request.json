@@ -1,0 +1,48 @@
+{
+  "params": {
+    "query": {
+      "filters": {
+        "typesCriterion": [
+          "applicationgroup"
+        ]
+      },
+      "valueContexts": [
+        {
+          "source": "internal",
+          "locale": "en-US"
+        }
+      ],
+      "userInteractionLocale": "en-US"
+    },
+    "fields": {
+      "attributes": [
+        "_ALL"
+      ]
+    },
+    "options": {
+      "maxRecords": 3
+    },
+    "rsconnect": {
+      "includeValidationData": false,
+      "profilecontexts": [
+        {
+          "subtype": "User",
+          "service": "ENTITY_EXPORT",
+          "channel": "JOB",
+          "format": "Excel",
+          "source": "internal"
+        }
+      ]
+    }
+  },
+  "clientState": {
+    "notificationInfo": {
+      "showNotificationToUser": true,
+      "userId": "autoappadmin@riversand.com_user"
+    },
+    "emulatedSyncDownload": "true",
+    "showNotificationToUser": true
+  },
+  "fileName": "EntityData",
+  "hotline": true
+}

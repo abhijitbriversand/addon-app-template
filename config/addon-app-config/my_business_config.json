@@ -1,0 +1,26 @@
+{
+  "configObject": {
+    "id": "helloworld-thresholdconfig",
+    "name": "helloworld-thresholdconfig",
+    "version": "1.0",
+    "type": "appconfig",
+    "properties": {
+      "app": "helloworld",
+      "subtype": "thresholdconfig"
+    },
+    "data": {
+      "jsondata": {
+        "myvalidations" : {
+          "type1validations": {
+            "threshold": 47,
+            "enabled": true
+          },
+          "type2validations": {
+            "threshold": 92,
+            "enabled": true
+          }
+        }
+      }
+    }
+  }
+}

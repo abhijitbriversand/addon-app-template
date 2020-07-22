@@ -1,0 +1,22 @@
+<Configuration packages="biz.paluch.logging.gelf.log4j2">
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n" />
+        </Console>
+        <Gelf name="gelf" host="udp:${env:KIBANA_URL}" port="${env:KIBANA_PORT}" version="1.1" facility="rs-app">
+            <Field name="rdp_type" literal="rs-app" />
+	    <Field name="JOB_ID" literal="${env:JOB_ID:-NOT_DEFINED}" />
+            <Field name="TENANT" literal="${env:TENANT:-NOT_DEFINED}" />
+            <Field name="APP_ID" literal="${env:APP_ID:-NOT_DEFINED}" />
+            <Field name="APP_VERSION" literal="${env:APP_VERSION:-NOT_DEFINED}" />
+            <Field name="JOB_DEF_ID" literal="${env:JOB_DEF_ID:-NOT_DEFINED}" />
+            <Field name="TASK_ID" literal="${env:TASK_ID:-NOT_DEFINED}" />
+        </Gelf>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="STDOUT" />
+            <AppenderRef ref="gelf" />
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,35 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [
+        {
+            "id": "plugin_plugin-hello-world-base_uiConfig",
+            "name": "plugin_plugin-hello-world",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "system",
+                "createdBy": "system"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "component": "plugin-hello-world"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "properties": {
+                                    "message": "Welcome to the Riversand DataPlatform UI plugin!!"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

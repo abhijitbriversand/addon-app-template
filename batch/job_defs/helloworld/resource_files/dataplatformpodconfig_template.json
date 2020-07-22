@@ -1,0 +1,3402 @@
+{
+    "podId": "@@POD_ID@@",
+    "purpose": "test",
+    "configTimeOut": 14400,
+    "version": "latest",
+    "validationOfPODConfigDisabled": true,
+    "tag": "Make Data Matter",
+    "instanceType": "local",
+    "timezone": "America/Chicago",
+    "logLevel": "info",
+    "contextDelimiter": "/",
+    "isCacheEnabled": false,
+    "allowableDelayBeforeRevalidateCreateActionInMs": 60000,
+    "cacheType": "local",
+    "cacheExpirationType": "timeBased",
+    "maxResultWindow": 30000,
+    "searchContextKeepAliveTime": "120000",
+    "isMetricsEnabled": false,
+    "defaultValueLocale": "en-US",
+    "defaultValueSource": "internal",
+    "referenceTenantInfo": {
+      "tenantId": "t1",
+      "tenantIdAlias": "t1"
+    },
+    "dataSizeThreshold": {
+      "externalDataSizeWarnLimit": 500006,
+      "externalDataSizeErrorLimit": 1000012,
+      "internalDataSizeWarnLimit": 1000012,
+      "internalDataSizeErrorLimit": 2000024,
+      "largeMessageObjectSizeTriggerLimit": 1000012,
+      "largeMessageObjectSizeErrorLimit": 20000024,
+      "largeMessageObjectContextsLimit": 5,
+      "messageCountLimit": 50
+    },
+    "logMessageMaxSize": 25000,
+    "getCombinedScrollBatchSize": 2000,
+    "cacheConfig": {
+      "default": {
+        "maxCacheEntries": 1000,
+        "cacheExpirationMs": "1800000",
+        "cacheExpirationType": "timeBased"
+      },
+      "model": {
+        "maxCacheEntries": 1000,
+        "cacheExpirationMs": "1800000"
+      },
+      "config": {
+        "maxCacheEntries": 1000,
+        "cacheExpirationMs": "1800000"
+      },
+      "nameIdResolution": {
+        "enabled": true,
+        "maxCacheEntries": 25000,
+        "cacheExpirationMs": "3600000"
+      },
+      "typeDomainResolution": {
+        "enabled": true,
+        "maxCacheEntries": 100,
+        "cacheExpirationMs": "3600000"
+      },
+      "eventHubStreamClient": {
+        "enabled": true,
+        "maxCacheEntries": 50,
+        "cacheExpirationMs": "600000"
+      },
+      "objectStorageProviderClient": {
+        "enabled": true,
+        "maxCacheEntries": 50,
+        "cacheExpirationMs": "600000"
+      },
+      "assetTaskSummary": {
+        "enabled": true,
+        "maxCacheEntries": 1000,
+        "cacheExpirationMs": "3600000"
+      },
+      "contextHierarchy": {
+        "enabled": true,
+        "maxCacheEntries": 1000,
+        "cacheExpirationMs": "3600000"
+      },
+      "contextDomainResolution": {
+        "enabled": true,
+        "maxCacheEntries": 1000,
+        "cacheExpirationMs": "3600000"
+      },
+      "kafkaProducerClient": {
+        "maxCacheEntries": 20,
+        "cacheExpirationMs": "1800000"
+      },
+      "analyticsReportableAttribute": {
+        "enabled": true,
+        "maxCacheEntries": 10000,
+        "cacheExpirationMs": "3600000"
+      },
+      "modelExternalName": {
+        "enabled": true,
+        "maxCacheEntries": 10000,
+        "cacheExpirationMs": "3600000"
+      },
+      "analyticsBusinessRuleToBusinessConditions": {
+        "enabled": true,
+        "maxCacheEntries": 10000,
+        "cacheExpirationMs": "3600000"
+      },
+      "trainModel": {
+        "enabled": true,
+        "maxCacheEntries": 10000,
+        "cacheExpirationMs": "21600000",
+        "cacheExpirationType": "writeBased"
+      },
+      "referenceAttribute": {
+        "enabled": true,
+        "maxCacheEntries": 10000,
+        "cacheExpirationMs": "86400000",
+        "cacheExpirationType": "writeBased"
+      },
+      "referenceData": {
+        "enabled": true,
+        "maxCacheEntries": 10000,
+        "cacheExpirationMs": "86400000",
+        "cacheExpirationType": "writeBased",
+        "maxReferenceValuesPerType": 50000
+      },
+      "taskSummary": {
+        "enabled": true,
+        "maxCacheEntries": 3000,
+        "cacheExpirationMs": "60000"
+      }
+    },
+    "services": {
+      "adminService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultDataTypes": {
+            "eventDataObject": "event"
+          }
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "deploytenant": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deployTenant",
+                "workerType": "fast"
+              },
+              "deploytopology": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deployTopology",
+                "workerType": "slow"
+              },
+              "deployplatformseed": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deployPlatformSeedData",
+                "workerType": "medium"
+              },
+              "deploytenantseed": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deployTenantSeedData",
+                "workerType": "medium"
+              },
+              "deployartifact": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deployArtifact",
+                "workerType": "medium"
+              },
+              "persistartifact": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "persistArtifact",
+                "workerType": "medium"
+              },
+              "deployplatformserviceconfig": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deployPlatformServiceConfig",
+                "workerType": "medium"
+              },
+              "provisionresource": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "provisionResource",
+                "workerType": "slow"
+              },
+              "essearch": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceSearchManagerBL",
+                "methodName": "esSearch",
+                "workerType": "medium"
+              },
+              "resetconsumeroffset": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "resetConsumerOffset",
+                "workerType": "fast"
+              },
+              "deleteresource": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deleteResource",
+                "workerType": "slow"
+              },
+              "deletetenant": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "deleteTenant",
+                "workerType": "fast"
+              },
+              "invalidateCache": {
+                "className": "com.riversand.dataplatform.ds.adminsvc.AdminServiceManagerBL",
+                "methodName": "invalidateCache",
+                "workerType": "fast"
+              }
+            }
+          },
+          "messageBroker": {
+            "domains": {
+              "adminmanage": {
+                "topics": {
+                  "inboundTopic": "rdpadminmanageinbound"
+                }
+              }
+            }
+          },
+          "searchStore": {
+            "domains": {
+              "eventDataObject": {
+                "objectTypes": {
+                  "event": {
+                    "indices": {
+                      "index": "dataplatformeventindex",
+                      "readIndex": "dataplatformeventreadindex",
+                      "writeIndex": "dataplatformeventwriteindex"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "objectStore": {
+            "domains": {
+              "eventDataObject": {
+                "objectTypes": {
+                  "event": {
+                    "storageProvider": {
+                      "storageProviderId": "nullObjectStore",
+                      "configProperties": {
+                        "containerName": "dataplatform-localhost-event"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "adminmanage-reader": 1,
+              "adminmanage-reader-max-spout-pending": 50,
+              "adminmanage-bolt": 1,
+              "noOfWorkers": 1
+            }
+          }
+        }
+      },
+      "analyticsService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "create": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.ExternalAnalyticsManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.ExternalAnalyticsManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.ExternalAnalyticsManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "getbyid": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.ExternalAnalyticsGetManagerBL",
+                "methodName": "getById",
+                "workerType": "fast"
+              }
+            }
+          },
+          "messageBroker": {
+            "domains": {
+              "analytics": {
+                "topics": {
+                  "inboundTopic": "rdpexternalanalyticsinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "analytics-external-reader": 1,
+              "analytics-external-reader-max-spout-pending": 50,
+              "analytics-external-search-bolt": 2,
+              "noOfWorkers": 1
+            }
+          }
+        }
+      },
+      "authorizationService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "computerole": {
+                "className": "com.riversand.dataplatform.ds.authorizationsvc.AuthorizationManagerBL",
+                "methodName": "computeRole",
+                "workerType": "medium"
+              },
+              "computeauthorizationmodels": {
+                "className": "com.riversand.dataplatform.ds.authorizationsvc.AuthorizationManagerBL",
+                "methodName": "computeAuthorizationModels",
+                "workerType": "slow"
+              }
+            }
+          }
+        }
+      },
+      "bulkEntityService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "createtask": {
+                "className": "com.riversand.dataplatform.bs.entitysvc.BulkEntityServiceManagerBL",
+                "methodName": "createTask",
+                "workerType": "medium"
+              }
+            }
+          }
+        }
+      },
+      "bulkEventService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "createtask": {
+                "className": "com.riversand.dataplatform.bs.eventsvc.BulkEventServiceManagerBL",
+                "methodName": "createTask",
+                "workerType": "medium"
+              }
+            }
+          }
+        }
+      },
+      "bulkRequestService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "createtask": {
+                "className": "com.riversand.dataplatform.bs.requestsvc.BulkRequestServiceManagerBL",
+                "methodName": "createTask",
+                "workerType": "medium"
+              }
+            }
+          }
+        }
+      },
+      "bulkGenericService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "createtask": {
+                "className": "com.riversand.dataplatform.bs.genericsvc.BulkGenericServiceManagerBL",
+                "methodName": "createTask",
+                "workerType": "medium"
+              }
+            }
+          }
+        }
+      },
+      "entityAppModelService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getcoalesce": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getcomposite": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelGetManagerBL",
+                "methodName": "getModelComposite",
+                "workerType": "medium"
+              },
+              "getcontext": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelGetManagerBL",
+                "methodName": "get",
+                "workerType": "fast"
+              },
+              "processcomposite": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelManagerBL",
+                "methodName": "processComposite",
+                "workerType": "medium"
+              },
+              "clearscroll": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelGetManagerBL",
+                "methodName": "clearScroll",
+                "workerType": "fast"
+              },
+              "getnearestcontext": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelGetManagerBL",
+                "methodName": "getNearestContext",
+                "workerType": "medium"
+              },
+              "getnearest": {
+                "className": "com.riversand.dataplatform.as.entitymodelsvc.EntityAppModelGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              }
+            }
+          }
+        }
+      },
+      "entityAppService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableLargeObjectInboundTopicType": false,
+          "isUOMResolutionEnabled": true,
+          "migrationConfig": {
+            "isReferenceResolutionEnabled": true,
+            "isClassificationResolutionEnabled": true
+          }
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "process": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppServiceManagerBL",
+                "methodName": "processEntity",
+                "workerType": "medium"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppServiceManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppServiceManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppServiceManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "createsnapshot": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppServiceManagerBL",
+                "methodName": "createSnapshot",
+                "workerType": "fast"
+              },
+              "deletesnapshot": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppServiceManagerBL",
+                "methodName": "deleteSnapshot",
+                "workerType": "fast"
+              },
+              "restoresnapshot": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppServiceManagerBL",
+                "methodName": "restoreSnapshot",
+                "workerType": "fast"
+              },
+              "get": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getcoalesce": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getcontext": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "get",
+                "workerType": "fast"
+              },
+              "getcombined": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "getcombined",
+                "workerType": "slow"
+              },
+              "getmappedvalues": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "getMappedValues",
+                "workerType": "medium"
+              },
+              "getrelated": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "getRelated",
+                "workerType": "slow"
+              },
+              "generatevariants": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppVariantManagerBL",
+                "methodName": "generateVariants",
+                "workerType": "slow"
+              },
+              "getsnapshot": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "getSnapshot",
+                "workerType": "medium"
+              },
+              "clearscroll": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityAppGetServiceManagerBL",
+                "methodName": "clearScroll",
+                "workerType": "fast"
+              },
+              "getentityhistory": {
+                "className": "com.riversand.dataplatform.as.entitysvc.EntityHistoryAppGetManagerBL",
+                "methodName": "getEntityHistory",
+                "workerType": "slow"
+              }
+            }
+          },
+          "messageBroker": {
+            "domains": {
+              "entity": {
+                "topics": {
+                  "inboundTopic": "rdpentityappmanageinbound",
+                  "bulkInboundTopic": "rdpentityappmanagebulkinbound",
+                  "uiBulkInboundTopic": "rdpentityappmanageuibulkinbound",
+                  "hotlineInboundTopic": "rdpentityappmanagehotlineinbound",
+                  "migrateInboundTopic": "rdpentityappmanagemigrateinbound",
+                  "largeObjectInboundTopic": "rdpentityappmanagelargeobjectinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "entityappmanage-reader": 1,
+              "entityappmanage-reader-max-spout-pending": 50,
+              "entityappmanage-hotline-reader": 1,
+              "entityappmanage-hotline-reader-max-spout-pending": 50,
+              "entityappmanage-migrate-reader": 1,
+              "entityappmanage-migrate-reader-max-spout-pending": 50,
+              "entityappmanage-bulk-reader": 1,
+              "entityappmanage-bulk-reader-max-spout-pending": 50,
+              "entityappmanage-uibulk-reader": 1,
+              "entityappmanage-uibulk-reader-max-spout-pending": 50,
+              "entityappmanage-largeobject-reader": 1,
+              "entityappmanage-largeobject-reader-max-spout-pending": 2,
+              "entityapp-action-bolt": 1,
+              "entityapp-reference-bolt": 1,
+              "entityapp-variantgeneration-bolt": 1,
+              "noOfWorkers": 1
+            }
+          }
+        }
+      },
+      "entityManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "isCreateEventDataPersistenceEnabled": true,
+          "defaultMaxRecords": 100,
+          "defaultBatchSize": 1000,
+          "cacheNotifierBatchSize": 1000,
+          "cacheNotifierTimeout": 300000,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableLargeObjectInboundTopicType": false,
+          "isMigrationEnabled": false,
+          "businessNamesForActors": {
+            "EntityManagerBL": "ApiService",
+            "BusinessRulePrepBolt": "ManageRulePreparation",
+            "ManageRuleRunBolt": "ManageRuleRun",
+            "EntityManageObjectOperationBolt": "ObjectStore",
+            "EntityManagePersistenceBolt": "SearchStore"
+          },
+          "migrationConfig": {
+            "isEventPersistenceEnabled": false
+          },
+          "recursionConfig": {
+            "maxCacheEntries": 10000,
+            "cacheExpirationMs": 1800000
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "entity": {
+                "topics": {
+                  "inboundTopic": "rdpentitymanageinbound",
+                  "bulkInboundTopic": "rdpentitymanagebulkinbound",
+                  "uiBulkInboundTopic": "rdpentitymanageuibulkinbound",
+                  "systemInboundTopic": "rdpentitymanagesysteminbound",
+                  "bulkSystemInboundTopic": "rdpentitymanagebulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpentitymanageuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpentitymanagehotlineinbound",
+                  "migrateInboundTopic": "rdpentitymanagemigrateinbound",
+                  "largeObjectInboundTopic": "rdpentitymanagelargeobjectinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "entitymanage-reader": 1,
+              "entitymanage-reader-max-spout-pending": 50,
+              "entitymanage-system-reader": 1,
+              "entitymanage-system-reader-max-spout-pending": 50,
+              "entitymanage-bulk-reader": 1,
+              "entitymanage-bulk-reader-max-spout-pending": 50,
+              "entitymanage-bulksystem-reader": 1,
+              "entitymanage-bulksystem-reader-max-spout-pending": 50,
+              "entitymanage-uibulk-reader": 1,
+              "entitymanage-uibulk-reader-max-spout-pending": 50,
+              "entitymanage-uibulksystem-reader": 1,
+              "entitymanage-uibulksystem-reader-max-spout-pending": 50,
+              "entitymanage-hotline-reader": 1,
+              "entitymanage-hotline-reader-max-spout-pending": 50,
+              "entitymanage-migrate-reader": 1,
+              "entitymanage-migrate-reader-max-spout-pending": 50,
+              "entitymanage-largeobject-reader": 1,
+              "entitymanage-largeobject-reader-max-spout-pending": 2,
+              "entitymanage-process-bolt": 2,
+              "entitymanage-modelsend-bolt": 1,
+              "entitymanage-objectoperation-bolt": 2,
+              "entitymanage-complete-event-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "EntityManageSubscriber",
+              "description": "Riversand Data Platform entity govern connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanageevent"
+                }
+              ]
+            },
+            {
+              "name": "PushToStreamSubscriber",
+              "description": "Riversand Data Platform event hub connector",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanageevent"
+                }
+              ]
+            },
+            {
+              "name": "AnalyticsSubscriber",
+              "description": "Riversand Data Platform entity manage event connector for @@TENANT_ID@@",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanageevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanagerequestsuccessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanagerequesterrorevent"
+                }
+              ]
+            }
+          ],
+          "notificationSubscribers": [
+            {
+              "name": "EntityManageNotificationSubscriber",
+              "description": "Riversand Data Platform entity manage notification subscriber for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanagenotificationevent"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "snapshotManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "maxSnapshotCount": 5,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "isMigrationEnabled": false,
+          "businessNamesForActors": {
+            "SnapshotManagerBL": "ApiService",
+            "SnapshotObjectOperationBolt": "ObjectStore",
+            "SnapshotPersistenceBolt": "SearchStore"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "error",
+              "SearchStore": "success",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "success",
+              "SearchStore": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "error",
+              "SearchStore": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "success",
+              "SearchStore": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "snapshot": {
+                "topics": {
+                  "inboundTopic": "rdpsnapshotmanageinbound",
+                  "bulkInboundTopic": "rdpsnapshotmanagebulkinbound",
+                  "uiBulkInboundTopic": "rdpsnapshotmanageuibulkinbound",
+                  "systemInboundTopic": "rdpsnapshotmanagesysteminbound",
+                  "bulkSystemInboundTopic": "rdpsnapshotmanagebulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpsnapshotmanageuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpsnapshotmanagehotlineinbound",
+                  "migrateInboundTopic": "rdpsnapshotmanagemigrateinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "snapshotmanage-reader": 1,
+              "snapshotmanage-reader-max-spout-pending": 50,
+              "snapshotmanage-system-reader": 1,
+              "snapshotmanage-system-reader-max-spout-pending": 50,
+              "snapshotmanage-bulk-reader": 1,
+              "snapshotmanage-bulk-reader-max-spout-pending": 50,
+              "snapshotmanage-bulksystem-reader": 1,
+              "snapshotmanage-bulksystem-reader-max-spout-pending": 50,
+              "snapshotmanage-uibulk-reader": 1,
+              "snapshotmanage-uibulk-reader-max-spout-pending": 50,
+              "snapshotmanage-uibulksystem-reader": 1,
+              "snapshotmanage-uibulksystem-reader-max-spout-pending": 50,
+              "snapshotmanage-hotline-reader": 1,
+              "snapshotmanage-hotline-reader-max-spout-pending": 50,
+              "snapshotmanage-migrate-reader": 1,
+              "snapshotmanage-migrate-reader-max-spout-pending": 50,
+              "snapshotmanage-prep-bolt": 1,
+              "snapshotmanage-persist-bolt": 1,
+              "snapshotmanage-objectoperation-bolt": 1,
+              "snapshotmanage-entityeventsend-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.snapshotmanagesvc.SnapshotGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.snapshotmanagesvc.SnapshotManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.snapshotmanagesvc.SnapshotManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "entityService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "businessNamesForActors": {
+            "EntityManagerBL": "ApiService",
+            "EntityManageObjectOperationBolt": "ObjectStore",
+            "EntityManageSearchOperationBolt": "SearchStore"
+          }
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityGetBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getcoalesce": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityGetBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getcontext": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityGetBL",
+                "methodName": "get",
+                "workerType": "fast"
+              },
+              "getnearest": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityGetBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "mergepreview": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityBL",
+                "methodName": "mergePreview",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.entitysvc.EntityBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "entityGovernService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableLargeObjectInboundTopicType": false,
+          "isCreateEventDataPersistenceEnabled": true,
+          "isEventPersistenceFilterEnabled": false,
+          "eventPersistFilters": {
+            "attributes": [
+              "_ALL"
+            ],
+            "contexts": [
+              {
+                "taxonomy": "_ALL",
+                "classification": "_ALL"
+              }
+            ]
+          },
+          "businessNamesForActors": {
+            "EntityGovernManagerBL": "ApiService",
+            "BusinessRulePrepBolt": "GovernRulePreparation",
+            "GovernRuleRunBolt": "GovernRuleRun",
+            "EntityManageObjectOperationBolt": "ObjectStore",
+            "EntityCompareAndProcessBolt": "SearchStore"
+          },
+          "migrationConfig": {
+            "isEventPersistenceEnabled": false,
+            "isEventPersistenceFilterEnabled": false
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "entity": {
+                "topics": {
+                  "inboundTopic": "rdpentitygoverninbound",
+                  "bulkInboundTopic": "rdpentitygovernbulkinbound",
+                  "uiBulkInboundTopic": "rdpentitygovernuibulkinbound",
+                  "systemInboundTopic": "rdpentitygovernsysteminbound",
+                  "bulkSystemInboundTopic": "rdpentitygovernbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpentitygovernuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpentitygovernhotlineinbound",
+                  "migrateInboundTopic": "rdpentitygovernmigrateinbound",
+                  "largeObjectInboundTopic": "rdpentitygovernlargeobjectinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "entitygovern-reader": 1,
+              "entitygovern-reader-max-spout-pending": 50,
+              "entitygovern-system-reader": 1,
+              "entitygovern-system-reader-max-spout-pending": 50,
+              "entitygovern-bulk-reader": 1,
+              "entitygovern-bulk-reader-max-spout-pending": 50,
+              "entitygovern-bulksystem-reader": 1,
+              "entitygovern-bulksystem-reader-max-spout-pending": 50,
+              "entitygovern-uibulk-reader": 1,
+              "entitygovern-uibulk-reader-max-spout-pending": 50,
+              "entitygovern-uibulksystem-reader": 1,
+              "entitygovern-uibulksystem-reader-max-spout-pending": 50,
+              "entitygovern-hotline-reader": 1,
+              "entitygovern-hotline-reader-max-spout-pending": 50,
+              "entitygovern-migrate-reader": 1,
+              "entitygovern-migrate-reader-max-spout-pending": 50,
+              "entitygovern-largeobject-reader": 1,
+              "entitygovern-largeobject-reader-max-spout-pending": 2,
+              "entitygovern-process-bolt": 2,
+              "entitygovern-objectoperation-bolt": 1,
+              "entitygovern-complete-event-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "AnalyticsSubscriber",
+              "description": "Riversand Data Platform govern event connector for @@TENANT_ID@@",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitygovernevent"
+                }
+              ]
+            },
+            {
+              "name": "EntityGovernSubscriber",
+              "description": "Riversand Data Platform entity manage connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitygovernevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitygovernrequestsuccessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitygovernrequesterrorevent"
+                }
+              ]
+            }
+          ],
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityGovernGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityGovernManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityGovernManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityGovernManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "reevaluate": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityGovernManagerBL",
+                "methodName": "reevaluate",
+                "workerType": "fast"
+              },
+              "startWorkflow": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "start",
+                "workerType": "medium"
+              },
+              "transitionWorkflow": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "transition",
+                "workerType": "medium"
+              },
+              "workflowChangeAssignment": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "changeAssignment",
+                "workerType": "medium"
+              },
+              "evaluateWorkflowCriteria": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "evaluateWorkflowCriteria",
+                "workerType": "medium"
+              },
+              "validate": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityGovernManagerBL",
+                "methodName": "validate",
+                "workerType": "medium"
+              },
+              "terminateWorkflowInstance": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "terminateWorkflowInstance",
+                "workerType": "medium"
+              },
+              "deleteEntityFromWorkflow": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "deleteEntityFromWorkflow",
+                "workerType": "medium"
+              },
+              "deleteEntityFromAllWorkflows": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "deleteEntityFromAllWorkflows",
+                "workerType": "medium"
+              },
+              "getUserNameForAutoAssignment": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityWorkflowManagerBL",
+                "methodName": "getUserNameForAutoAssignment",
+                "workerType": "medium"
+              },
+              "clearscroll": {
+                "className": "com.riversand.dataplatform.ds.entitygovernsvc.EntityGovernGetManagerBL",
+                "methodName": "clearScroll",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "entityGraphManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 2000,
+          "checkForNoChange": false,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "businessNamesForActors": {
+            "EntityGraphManagerBL": "ApiService",
+            "EntityGraphCompareAndProcessBolt": "SearchStore",
+            "EntityGraphIdentificationBolt": "Entity Graph Identification"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "SearchStore": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "SearchStore": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "entity": {
+                "topics": {
+                  "inboundTopic": "rdpentitygraphinbound",
+                  "bulkInboundTopic": "rdpentitygraphbulkinbound",
+                  "uiBulkInboundTopic": "rdpentitygraphuibulkinbound",
+                  "systemInboundTopic": "rdpentitygraphsysteminbound",
+                  "bulkSystemInboundTopic": "rdpentitygraphbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpentitygraphuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpentitygraphhotlineinbound",
+                  "migrateInboundTopic": "rdpentitygraphmigrateinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "entitygraph-reader": 1,
+              "entitygraph-reader-max-spout-pending": 50,
+              "entitygraph-system-reader": 1,
+              "entitygraph-system-reader-max-spout-pending": 50,
+              "entitygraph-hotline-reader": 1,
+              "entitygraph-hotline-reader-max-spout-pending": 50,
+              "entitygraph-bulk-reader": 1,
+              "entitygraph-bulk-reader-max-spout-pending": 50,
+              "entitygraph-bulksystem-reader": 1,
+              "entitygraph-bulksystem-reader-max-spout-pending": 50,
+              "entitygraph-uibulk-reader": 1,
+              "entitygraph-uibulk-reader-max-spout-pending": 50,
+              "entitygraph-uibulksystem-reader": 1,
+              "entitygraph-uibulksystem-reader-max-spout-pending": 50,
+              "entitygraph-migrate-reader": 1,
+              "entitygraph-migrate-reader-max-spout-pending": 50,
+              "entitygraph-bolt": 1,
+              "entitygraphpreparation-bolt": 1,
+              "entitygraphidentification-bolt": 2,
+              "entitygraphcompareandprocess-bolt": 2,
+              "entitygraph-graphcompleteeventcreate-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "EntityGraphSubscriber",
+              "description": "Riversand Data Platform entity manage connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitygraphevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitygraphrequestsuccessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitygraphrequesterrorevent"
+                }
+              ]
+            }
+          ],
+          "restApi": {
+            "actions": {
+              "create": {
+                "className": "com.riversand.dataplatform.ds.entitygraphcomputesvc.EntityGraphManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "entityPostProcessService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableLargeObjectInboundTopicType": false,
+          "businessNamesForActors": {
+            "EntityManagerBL": "ApiService",
+            "PostProcessRuleRunBolt": "PostProcessRuleRun"
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "entity": {
+                "topics": {
+                  "inboundTopic": "rdpentitypostprocessinbound",
+                  "bulkInboundTopic": "rdpentitypostprocessbulkinbound",
+                  "uiBulkInboundTopic": "rdpentitypostprocessuibulkinbound",
+                  "systemInboundTopic": "rdpentitypostprocesssysteminbound",
+                  "bulkSystemInboundTopic": "rdpentitypostprocessbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpentitypostprocessuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpentitypostprocesshotlineinbound",
+                  "migrateInboundTopic": "rdpentitypostprocessmigrateinbound",
+                  "largeObjectInboundTopic": "rdpentitypostprocesslargeobjectinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "entitypostprocess-reader": 1,
+              "entitypostprocess-reader-max-spout-pending": 50,
+              "entitypostprocess-system-reader": 1,
+              "entitypostprocess-system-reader-max-spout-pending": 50,
+              "entitypostprocess-hotline-reader": 1,
+              "entitypostprocess-hotline-reader-max-spout-pending": 50,
+              "entitypostprocess-bulk-reader": 1,
+              "entitypostprocess-bulk-reader-max-spout-pending": 50,
+              "entitypostprocess-bulksystem-reader": 1,
+              "entitypostprocess-bulksystem-reader-max-spout-pending": 50,
+              "entitypostprocess-uibulk-reader": 1,
+              "entitypostprocess-uibulk-reader-max-spout-pending": 50,
+              "entitypostprocess-uibulksystem-reader": 1,
+              "entitypostprocess-uibulksystem-reader-max-spout-pending": 50,
+              "entitypostprocess-migrate-reader": 1,
+              "entitypostprocess-migrate-reader-max-spout-pending": 50,
+              "entitypostprocess-largeobject-reader": 1,
+              "entitypostprocess-largeobject-reader-max-spout-pending": 2,
+              "entitypostprocess-bolt": 1,
+              "entitypostprocess-business-rule-prep-bolt": 1,
+              "entitypostprocess-business-rule-run-bolt": 1,
+              "entitypostprocess-completeevent-create-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "EntityPostProcessSubscriber",
+              "description": "Riversand Data Platform entity post process connector",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitypostprocessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitypostprocessrequestsuccessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitypostprocessrequesterrorevent"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "eventManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 2000,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableSystemInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableLargeObjectInboundTopicType": false,
+          "enableBulkSystemGroomingInboundTopicType": false,
+          "defaultDataTypes": {
+            "eventDataObject": "event"
+          }
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.eventmanagesvc.EventGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.eventmanagesvc.EventManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.eventmanagesvc.EventManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "deletebyquery": {
+                "className": "com.riversand.dataplatform.ds.eventmanagesvc.EventDeleteManagerBL",
+                "methodName": "deleteByQuery",
+                "workerType": "slow"
+              },
+              "clearscroll": {
+                "className": "com.riversand.dataplatform.ds.eventmanagesvc.EventGetManagerBL",
+                "methodName": "clearScroll",
+                "workerType": "fast"
+              }
+            }
+          },
+          "messageBroker": {
+            "domains": {
+              "entitymanageevent": {
+                "topics": {
+                  "inboundTopic": "rdpeventinbound",
+                  "bulkInboundTopic": "rdpeventbulkinbound",
+                  "uiBulkInboundTopic": "rdpeventuibulkinbound",
+                  "systemInboundTopic": "rdpeventsysteminbound",
+                  "bulkSystemInboundTopic": "rdpeventbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpeventuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpeventhotlineinbound",
+                  "migrateInboundTopic": "rdpeventmigrateinbound",
+                  "bulkSystemGroomingInboundTopic": "rdpeventbulksystemgroominginbound",
+                  "largeObjectInboundTopic": "rdpeventlargeobjectinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "eventmanage-reader": 1,
+              "eventmanage-reader-max-spout-pending": 50,
+              "eventmanage-system-reader": 1,
+              "eventmanage-system-reader-max-spout-pending": 50,
+              "eventmanage-bulk-reader": 1,
+              "eventmanage-bulk-reader-max-spout-pending": 50,
+              "eventmanage-bulksystem-reader": 1,
+              "eventmanage-bulksystem-reader-max-spout-pending": 50,
+              "eventmanage-uibulk-reader": 1,
+              "eventmanage-uibulk-reader-max-spout-pending": 50,
+              "eventmanage-uibulksystem-reader": 1,
+              "eventmanage-uibulksystem-reader-max-spout-pending": 50,
+              "eventmanage-hotline-reader": 1,
+              "eventmanage-hotline-reader-max-spout-pending": 50,
+              "eventmanage-migrate-reader": 1,
+              "eventmanage-migrate-reader-max-spout-pending": 50,
+              "eventmanage-largeobject-reader": 1,
+              "eventmanage-largeobject-reader-max-spout-pending": 2,
+              "eventmanage-bolt": 1,
+              "eventmanage-searchcreate-bolt": 2,
+              "eventmanage-searchbulkcreate-bolt": 1,
+              "eventmanage-objectoperation-bolt": 2,
+              "eventmanage-objectbulkcreate-bolt": 1,
+              "eventmanage-subscriber-dispatcher-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "searchStore": {
+            "domains": {
+              "eventDataObject": {
+                "objectTypes": {
+                  "event": {
+                    "indices": {
+                      "index": "dataplatformeventindex",
+                      "readIndex": "dataplatformeventreadindex",
+                      "writeIndex": "dataplatformeventwriteindex"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "externalEventManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableSystemInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableTaskSummarization": true,
+          "enableBulkSystemGroomingInboundTopicType": false,
+          "migrationConfig": {
+            "isEventPersistenceEnabled": false
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "externalevent": {
+                "topics": {
+                  "inboundTopic": "rdpexternaleventinbound",
+                  "bulkInboundTopic": "rdpexternaleventbulkinbound",
+                  "uiBulkInboundTopic": "rdpexternaleventuibulkinbound",
+                  "systemInboundTopic": "rdpexternaleventsysteminbound",
+                  "bulkSystemInboundTopic": "rdpexternaleventbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpexternaleventuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpexternaleventhotlineinbound",
+                  "migrateInboundTopic": "rdpexternaleventmigrateinbound",
+                  "bulkSystemGroomingInboundTopic": "rdpexternaleventbulksystemgroominginbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "eventmanage-reader": 1,
+              "eventmanage-reader-max-spout-pending": 50,
+              "eventmanage-system-reader": 1,
+              "eventmanage-system-reader-max-spout-pending": 50,
+              "eventmanage-bulk-reader": 1,
+              "eventmanage-bulk-reader-max-spout-pending": 50,
+              "eventmanage-bulksystem-reader": 1,
+              "eventmanage-bulksystem-reader-max-spout-pending": 50,
+              "eventmanage-uibulk-reader": 1,
+              "eventmanage-uibulk-reader-max-spout-pending": 50,
+              "eventmanage-uibulksystem-reader": 1,
+              "eventmanage-uibulksystem-reader-max-spout-pending": 50,
+              "eventmanage-hotline-reader": 1,
+              "eventmanage-hotline-reader-max-spout-pending": 50,
+              "eventmanage-migrate-reader": 1,
+              "eventmanage-migrate-reader-max-spout-pending": 50,
+              "eventmanage-bolt": 1,
+              "eventmanage-searchcreate-bolt": 2,
+              "eventmanage-objectoperation-bolt": 2,
+              "eventmanage-subscriber-dispatcher-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "TaskSummarizationSubscriber",
+              "description": "Riversand Data Platform entity govern connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "bulkoperationevent"
+                },
+                {
+                  "filterType": "include",
+                  "dataObjectType": "adminexternalevent"
+                },
+                {
+                  "filterType": "include",
+                  "dataObjectType": "variantgenerationevent"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "errorEventManageService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "errorevent": {
+                "topics": {
+                  "inboundTopic": "rdperrorinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "erroreventmanage-reader": 1,
+              "erroreventmanage-searchcreate-bolt": 2,
+              "noOfWorkers": 1
+            }
+          }
+        }
+      },
+      "securityService": {
+        "serviceSpecific": {
+        }
+      },
+      "entityManageModelService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "cacheNotifierBatchSize": 1000,
+          "cacheNotifierTimeout": 600000,
+          "mergeAuthorizationModelsBatchSize": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableLargeObjectInboundTopicType": false,
+          "businessNamesForActors": {
+            "EntityManageModelManagerBL": "ApiService",
+            "EntityManageObjectOperationBolt": "ObjectStore",
+            "EntityCompareAndProcessBolt": "SearchStore"
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "entitymanagemodel": {
+                "topics": {
+                  "inboundTopic": "rdpentitymanagemodelinbound",
+                  "bulkInboundTopic": "rdpentitymanagemodelbulkinbound",
+                  "uiBulkInboundTopic": "rdpentitymanagemodeluibulkinbound",
+                  "systemInboundTopic": "rdpentitymanagemodelsysteminbound",
+                  "bulkSystemInboundTopic": "rdpentitymanagemodelbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpentitymanagemodeluibulksysteminbound",
+                  "hotlineInboundTopic": "rdpentitymanagemodelhotlineinbound",
+                  "migrateInboundTopic": "rdpentitymanagemodelmigrateinbound",
+                  "largeObjectInboundTopic": "rdpentitymanagemodellargeobjectinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "entitymanagemodel-reader": 1,
+              "entitymanagemodel-reader-max-spout-pending": 50,
+              "entitymanagemodel-system-reader": 1,
+              "entitymanagemodel-system-reader-max-spout-pending": 50,
+              "entitymanagemodel-hotline-reader": 1,
+              "entitymanagemodel-hotline-reader-max-spout-pending": 50,
+              "entitymanagemodel-bulk-reader": 1,
+              "entitymanagemodel-bulk-reader-max-spout-pending": 50,
+              "entitymanagemodel-bulksystem-reader": 1,
+              "entitymanagemodel-bulksystem-reader-max-spout-pending": 50,
+              "entitymanagemodel-uibulk-reader": 1,
+              "entitymanagemodel-uibulk-reader-max-spout-pending": 50,
+              "entitymanagemodel-uibulksystem-reader": 1,
+              "entitymanagemodel-uibulksystem-reader-max-spout-pending": 50,
+              "entitymanagemodel-migrate-reader": 1,
+              "entitymanagemodel-migrate-reader-max-spout-pending": 50,
+              "entitymanagemodel-largeobject-reader": 1,
+              "entitymanagemodel-largeobject-reader-max-spout-pending": 2,
+              "entitymanagemodel-bolt": 1,
+              "entitymanagemodel-compareandprocess-bolt": 1,
+              "entitymanagemodel-objectoperation-bolt": 2,
+              "entitymanagemodel-completeeventcreate-bolt": 1,
+              "entitymanagemodel-updatecache-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "UserModelSubscriber",
+              "description": "Event subscriber for user model",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymodelevent"
+                }
+              ]
+            },
+            {
+              "name": "ImpactProcessSubscriber",
+              "description": "Event subscriber for impact processing",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymodelevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanagemodelrequestsuccessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "entitymanagemodelrequesterrorevent"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "entityModelService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "businessNamesForActors": {
+            "EntityManageModelManagerBL": "ApiService",
+            "EntityManageObjectOperationBolt": "ObjectStore",
+            "EntityManageSearchOperationBolt": "SearchStore"
+          }
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.entitymodelsvc.EntityModelGetBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.entitymodelsvc.EntityModelBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.entitymodelsvc.EntityModelBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.entitymodelsvc.EntityModelBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "getcoalesce": {
+                "className": "com.riversand.dataplatform.ds.entitymodelsvc.EntityModelGetBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getcontext": {
+                "className": "com.riversand.dataplatform.ds.entitymodelsvc.EntityModelGetBL",
+                "methodName": "get",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "apiHostService": {
+        "serviceSpecific": {
+          "apiHost": {
+            "serviceUrlPathToServiceName": {
+              "analyticsservice": "analyticsService",
+              "authorizationservice": "authorizationService",
+              "entityappmodelservice": "entityAppModelService",
+              "entityappservice": "entityAppService",
+              "entityservice": "entityService",
+              "entitymodelservice": "entityModelService",
+              "entitygovernservice": "entityGovernService",
+              "requesttrackingservice": "requestManageService",
+              "configurationservice": "configurationManageService",
+              "binaryobjectservice": "binaryObjectManageService",
+              "binarystreamobjectservice": "binaryStreamObjectService",
+              "matchservice": "matchService",
+              "eventservice": "eventManageService",
+              "entitygraphservice": "entityGraphManageService",
+              "bulkentityservice": "bulkEntityService",
+              "genericobjectmanageservice": "genericObjectManageService",
+              "notificationservice": "notificationManageService",
+              "diagnosticservice": "diagnosticService",
+              "schedulerservice": "scheduleObjectManageService",
+              "adminservice": "adminService",
+              "bulkeventservice": "bulkEventService",
+              "bulkrequestservice": "bulkRequestService",
+              "bulkgenericservice": "bulkGenericService",
+              "impactmanageservice": "impactManageService",
+              "modelgovernservice": "modelGovernService",
+              "integrationservice": "integrationService",
+              "rsanalyticsservice": "rsAnalyticsService",
+              "proxyservice": "proxyManageService"
+            }
+          }
+        }
+      },
+      "scheduleObjectManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "defaultDataTypes": {
+            "scheduleDataObject": "scheduleobject",
+            "eventDataObject": "event"
+          },
+          "businessNamesForActors": {
+            "ScheduleObjectManagerBL": "ApiService",
+            "ScheduleSearchStoreCreateBolt": "SearchStore"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "SearchStore": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "SearchStore": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "scheduleobject": {
+                "topics": {
+                  "inboundTopic": "rdpscheduleobjectinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "scheduleobjectmanage-reader": 1,
+              "scheduleobjectmanage-reader-max-spout-pending": 50,
+              "scheduleobjectmanage-process-bolt": 1,
+              "scheduleobjectmanage-searchstore-bolt": 1,
+              "scheduleobjectmanage-searchstore-event-bolt": 1,
+              "scheduleobjectmanage-objectstore-bolt": 1,
+              "scheduler-evaluate-bolt": 1,
+              "scheduler-invoke-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "restApi": {
+            "actions": {
+              "create": {
+                "className": "com.riversand.dataplatform.ds.schedulemanagesvc.ScheduleObjectManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.schedulemanagesvc.ScheduleObjectManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.schedulemanagesvc.ScheduleObjectManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "get": {
+                "className": "com.riversand.dataplatform.ds.schedulemanagesvc.ScheduleObjectGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              }
+            }
+          }
+        }
+      },
+      "requestManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableBulkSystemGroomingInboundTopicType": false,
+          "includeTaskDetails": true,
+          "enableTaskSummarization": true,
+          "defaultDataTypes": {
+            "dataObject": "entity",
+            "eventDataObject": "event",
+            "requestDataObject": "request"
+          },
+          "requestManage": {
+            "_comment": "There are currently four levels, none, onlyError, basic, includeGetOperations",
+            "trackingLevel": "basic",
+            "includeDataObject": false
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "requestentity": {
+                "topics": {
+                  "inboundTopic": "rdprequestmanageinbound",
+                  "bulkInboundTopic": "rdprequestmanagebulkinbound",
+                  "uiBulkInboundTopic": "rdprequestmanageuibulkinbound",
+                  "systemInboundTopic": "rdprequestmanagesysteminbound",
+                  "bulkSystemInboundTopic": "rdprequestmanagebulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdprequestmanageuibulksysteminbound",
+                  "hotlineInboundTopic": "rdprequestmanagehotlineinbound",
+                  "migrateInboundTopic": "rdprequestmanagemigrateinbound",
+                  "bulkSystemGroomingInboundTopic": "rdprequestmanagebulksystemgroominginbound"
+                }
+              }
+            }
+          },
+          "searchStore": {
+            "domains": {
+              "requestDataObject": {
+                "objectTypes": {
+                  "request": {
+                    "indices": {
+                      "index": "dataplatformrequestobjectindex",
+                      "readIndex": "dataplatformrequestobjectreadindex",
+                      "writeIndex": "dataplatformrequestobjectwriteindex"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "objectStore": {
+            "domains": {
+              "requestDataObject": {
+                "objectTypes": {
+                  "request": {
+                    "storageProvider": {
+                      "storageProviderId": "nullObjectStore",
+                      "configProperties": {
+                        "containerName": "dataplatform-localhost-requestobject"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "requestmanage-reader": 1,
+              "requestmanage-reader-max-spout-pending": 50,
+              "requestmanage-system-reader": 1,
+              "requestmanage-system-reader-max-spout-pending": 50,
+              "requestmanage-hotline-reader": 1,
+              "requestmanage-hotline-reader-max-spout-pending": 50,
+              "requestmanage-bulk-reader": 1,
+              "requestmanage-bulk-reader-max-spout-pending": 50,
+              "requestmanage-bulksystem-reader": 1,
+              "requestmanage-bulksystem-reader-max-spout-pending": 50,
+              "requestmanage-uibulk-reader": 1,
+              "requestmanage-uibulk-reader-max-spout-pending": 50,
+              "requestmanage-migrate-reader": 1,
+              "requestmanage-migrate-reader-max-spout-pending": 50,
+              "requestmanage-uibulksystem-reader": 1,
+              "requestmanage-uibulksystem-reader-max-spout-pending": 50,
+              "requestmanage-bolt": 1,
+              "requestmanage-operation-bolt": 1,
+              "requestmanage-requestofrequestsoperation-bolt": 1,
+              "requestmanagedelete-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.requestmanagesvc.RequestObjectGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "inspect": {
+                "className": "com.riversand.dataplatform.ds.requestmanagesvc.RequestObjectGetManagerBL",
+                "methodName": "inspect",
+                "workerType": "fast"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.requestmanagesvc.RequestObjectManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.requestmanagesvc.RequestObjectManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.requestmanagesvc.RequestObjectManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "deletebyquery": {
+                "className": "com.riversand.dataplatform.ds.requestmanagesvc.RequestDeleteManagerBL",
+                "methodName": "deleteByQuery",
+                "workerType": "slow"
+              },
+              "clearscroll": {
+                "className": "com.riversand.dataplatform.ds.requestmanagesvc.RequestObjectGetManagerBL",
+                "methodName": "clearScroll",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "eventReportService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "includeTaskDetails": false,
+          "updateInterval": 10,
+          "isTimeCacheEnabled": true,
+          "notificationExclusionTasks": [
+            "delete-query",
+            "delete"
+          ],
+          "defaultDataTypes": {
+            "dataObject": "eventreport",
+            "eventDataObject": "event",
+            "requestDataObject": "request"
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "eventreport": {
+                "topics": {
+                  "inboundTopic": "rdpeventreportinbound",
+                  "bulkInboundTopic": "rdpeventreportbulkinbound",
+                  "uiBulkInboundTopic": "rdpeventreportuibulkinbound",
+                  "systemInboundTopic": "rdpeventreportsysteminbound",
+                  "bulkSystemInboundTopic": "rdpeventreportbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpeventreportuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpeventreporthotlineinbound",
+                  "migrateInboundTopic": "rdpeventreportmigrateinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "eventreport-reader": 1,
+              "eventreport-reader-max-spout-pending": 50,
+              "eventreport-system-reader": 1,
+              "eventreport-system-reader-max-spout-pending": 50,
+              "eventreport-hotline-reader": 1,
+              "eventreport-hotline-reader-max-spout-pending": 50,
+              "eventreport-bulk-reader": 1,
+              "eventreport-bulk-reader-max-spout-pending": 50,
+              "eventreport-bulksystem-reader": 1,
+              "eventreport-bulksystem-reader-max-spout-pending": 50,
+              "eventreport-uibulk-reader": 1,
+              "eventreport-uibulk-reader-max-spout-pending": 50,
+              "eventreport-uibulksystem-reader": 1,
+              "eventreport-uibulksystem-reader-max-spout-pending": 50,
+              "eventreport-migrate-reader": 1,
+              "eventreport-migrate-reader-max-spout-pending": 50,
+              "eventreport-bolt": 4,
+              "eventreport-task-summarization-bolt": 4,
+              "eventreport-parent-task-summarization-bolt": 2,
+              "noOfWorkers": 1
+            }
+          },
+          "restApi": {
+            "actions": {
+              "create": {
+                "className": "com.riversand.dataplatform.fs.eventmanagesvc.EventReportManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.fs.eventmanagesvc.EventReportManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "notificationManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "isEmailNotificationEnabled": false,
+          "userEmailNotificationEnabled": false,
+          "email": "@@RIVERSAND_EMAIL_ID@@",
+          "password": "@@RIVERSAND_EMAIL_PASSWD@@",
+          "mail.smtp.auth": true,
+          "mail.smtp.starttls.enable": true,
+          "mail.smtp.host": "smtp-mail.outlook.com",
+          "mail.smtp.port": 587,
+          "mail.smtp.connectiontimeout": 10000,
+          "mail.smtp.timeout": 30000,
+          "mail.smtp.writetimeout": 60000,
+          "defaultDataTypes": {
+            "notificationDataObject": "notificationObject",
+            "eventDataObject": "event"
+          },
+          "notificationManage": {
+            "persistNotification": false,
+            "sendNotificationToCallbackUrl": false,
+            "notificationPublisherConfig": {
+              "excludedServices": [
+                "entityPostProcess",
+                "scheduleObjectManageService",
+                "binaryObjectService",
+                "binaryStreamObjectService"
+              ]
+            },
+            "notificationSubscribersConfig": [
+              {
+                "subscriber": "rufClient",
+                "notificationEndpoint": "http://mdm-ui:5005/api/notify",
+                "subscribedClientIds": [
+                  "copClient",
+                  "rapClient",
+                  "rdpClient",
+                  "rufClient"
+                ],
+                "subscribedServices": [
+                  "entityManageService",
+                  "entityGovernService",
+                  "configurationManageService",
+                  "entityManageModelService",
+                  "notificationManageService"
+                ],
+                "taskConsolidationServices": [
+                  "entityManageModelService"
+                ]
+              }
+            ]
+          },
+          "businessNamesForActors": {
+            "NotificationManagerBL": "ApiService"
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "notificationevent": {
+                "topics": {
+                  "inboundTopic": "rdpnotificationeventinbound",
+                  "bulkInboundTopic": "rdpnotificationeventbulkinbound",
+                  "uiBulkInboundTopic": "rdpnotificationeventuibulkinbound",
+                  "systemInboundTopic": "rdpnotificationeventsysteminbound",
+                  "bulkSystemInboundTopic": "rdpnotificationeventbulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpnotificationeventuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpnotificationeventhotlineinbound",
+                  "migrateInboundTopic": "rdpnotificationeventmigrateinbound"
+                }
+              }
+            }
+          },
+          "searchStore": {
+            "domains": {
+              "notificationDataObject": {
+                "objectTypes": {
+                  "notificationObject": {
+                    "indices": {
+                      "index": "dataplatformindex",
+                      "readIndex": "dataplatformreadindex",
+                      "writeIndex": "dataplatformwriteindex"
+                    }
+                  }
+                }
+              },
+              "eventDataObject": {
+                "objectTypes": {
+                  "event": {
+                    "indices": {
+                      "index": "dataplatformeventindex",
+                      "readIndex": "dataplatformeventreadindex",
+                      "writeIndex": "dataplatformeventwriteindex"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "objectStore": {
+            "domains": {
+              "notificationDataObject": {
+                "objectTypes": {
+                  "notificationObject": {
+                    "storageProvider": {
+                      "storageProviderId": "nullObjectStore",
+                      "configProperties": {
+                        "containerName": "dataplatform-localhost-notification"
+                      }
+                    }
+                  }
+                }
+              },
+              "eventDataObject": {
+                "objectTypes": {
+                  "event": {
+                    "storageProvider": {
+                      "storageProviderId": "nullObjectStore",
+                      "configProperties": {
+                        "containerName": "dataplatform-localhost-event"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "notification-reader": 1,
+              "notification-reader-max-spout-pending": 50,
+              "notification-system-reader": 1,
+              "notification-system-reader-max-spout-pending": 50,
+              "notification-hotline-reader": 1,
+              "notification-hotline-reader-max-spout-pending": 50,
+              "notification-bulk-reader": 1,
+              "notification-bulk-reader-max-spout-pending": 50,
+              "notification-bulksystem-reader": 1,
+              "notification-bulksystem-reader-max-spout-pending": 50,
+              "notification-uibulk-reader": 1,
+              "notification-uibulk-reader-max-spout-pending": 50,
+              "notification-migrate-reader": 1,
+              "notification-migrate-reader-max-spout-pending": 50,
+              "notification-uibulksystem-reader": 1,
+              "notification-uibulksystem-reader-max-spout-pending": 50,
+              "notification-bolt": 1,
+              "notification-send-bolt": 1,
+              "notification-searchcreate-bolt": 1,
+              "notification-objectcreate-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "restApi": {
+            "actions": {
+              "notify": {
+                "className": "com.riversand.dataplatform.ds.notificationmanagesvc.NotificationManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "sendemail": {
+                "className": "com.riversand.dataplatform.ds.notificationmanagesvc.NotificationManagerBL",
+                "methodName": "sendEmail",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "proxyManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "businessNamesForActors": {
+            "ProxyObjectManagerBL": "ApiService"
+          },
+          "defaultDataTypes": {
+            "eventDataObject": "event"
+          }
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "call": {
+                "className": "com.riversand.dataplatform.ds.proxymanagesvc.ProxyObjectManagerBL",
+                "methodName": "call",
+                "workerType": "slow"
+              }
+            }
+          },
+          "validationOfPlatformConfigDisabled": true
+        }
+      },
+      "configurationManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "cacheNotifierBatchSize": 1000,
+          "cacheNotifierTimeout": 600000,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "defaultDataTypes": {
+            "configDataObject": "configObject",
+            "eventDataObject": "event"
+          },
+          "configObjectManage": {
+            "isConfigObjectManageEventsEnabled": true
+          },
+          "businessNamesForActors": {
+            "ConfigurationManagerBL": "ApiService",
+            "ConfigurationManageObjectOperationBolt": "ObjectStore",
+            "ConfigurationManageSearchOperationBolt": "SearchStore"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "error",
+              "SearchStore": "success",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "success",
+              "SearchStore": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "error",
+              "SearchStore": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "ObjectStore": "success",
+              "SearchStore": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "configurationmanage": {
+                "topics": {
+                  "inboundTopic": "rdpconfigurationmanageinbound",
+                  "bulkInboundTopic": "rdpconfigurationmanagebulkinbound",
+                  "uiBulkInboundTopic": "rdpconfigurationmanageuibulkinbound",
+                  "systemInboundTopic": "rdpconfigurationmanagesysteminbound",
+                  "bulkSystemInboundTopic": "rdpconfigurationmanagebulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpconfigurationmanageuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpconfigurationmanagehotlineinbound",
+                  "migrateInboundTopic": "rdpconfigurationmanagemigrateinbound"
+                }
+              }
+            }
+          },
+          "searchStore": {
+            "domains": {
+              "configDataObject": {
+                "objectTypes": {
+                  "configObject": {
+                    "indices": {
+                      "index": "dataplatformindex",
+                      "readIndex": "dataplatformreadindex",
+                      "writeIndex": "dataplatformwriteindex"
+                    }
+                  }
+                }
+              },
+              "eventDataObject": {
+                "objectTypes": {
+                  "event": {
+                    "indices": {
+                      "index": "dataplatformeventindex",
+                      "readIndex": "dataplatformeventreadindex",
+                      "writeIndex": "dataplatformeventwriteindex"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "objectStore": {
+            "domains": {
+              "configDataObject": {
+                "objectTypes": {
+                  "configObject": {
+                    "storageProvider": {
+                      "storageProviderId": "nullObjectStore",
+                      "configProperties": {
+                        "containerName": "dataplatform-localhost-configuration"
+                      }
+                    }
+                  }
+                }
+              },
+              "eventDataObject": {
+                "objectTypes": {
+                  "event": {
+                    "storageProvider": {
+                      "storageProviderId": "nullObjectStore",
+                      "configProperties": {
+                        "containerName": "dataplatform-localhost-event"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "validationOfPlatformConfigDisabled": true,
+          "binaryStreamObjectStore": {
+            "domains": {
+              "binaryStreamDataObject": {
+                "objectTypes": {
+                  "seedDataStream": {
+                    "storageProvider": {
+                      "storageProviderId": "artifactStore",
+                      "configProperties": {
+                        "containerName": "seed-data"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "configmanage-reader": 1,
+              "configmanage-reader-max-spout-pending": 50,
+              "configmanage-system-reader": 1,
+              "configmanage-system-reader-max-spout-pending": 50,
+              "configmanage-hotline-reader": 1,
+              "configmanage-hotline-reader-max-spout-pending": 50,
+              "configmanage-migrate-reader": 1,
+              "configmanage-migrate-reader-max-spout-pending": 50,
+              "configmanage-bulk-reader": 1,
+              "configmanage-bulk-reader-max-spout-pending": 50,
+              "configmanage-bulksystem-reader": 1,
+              "configmanage-bulksystem-reader-max-spout-pending": 50,
+              "configmanage-uibulk-reader": 1,
+              "configmanage-uibulk-reader-max-spout-pending": 50,
+              "configmanage-uibulksystem-reader": 1,
+              "configmanage-uibulksystem-reader-max-spout-pending": 50,
+              "configmanage-bolt": 1,
+              "configmanage-searchcreate-bolt": 1,
+              "configmanage-updatezk-bolt": 1,
+              "configmanage-objectcreate-bolt": 1,
+              "configmanage-eventsend-bolt": 1,
+              "configmanage-updatecache-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "ImpactProcessSubscriber",
+              "description": "Event subscriber for impact processing",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "configobjectmanageevent"
+                }
+              ]
+            },
+            {
+              "name": "ConfigurationManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "tenantserviceconfigchangeevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "configurationmanagerequestsuccessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "configurationmanagerequesterrorevent"
+                }
+              ]
+            }
+          ],
+          "restApi": {
+            "actions": {
+              "getnearest": {
+                "className": "com.riversand.dataplatform.ds.configurationmanagesvc.ConfigObjectGetManagerBL",
+                "methodName": "getNearest",
+                "workerType": "medium"
+              },
+              "get": {
+                "className": "com.riversand.dataplatform.ds.configurationmanagesvc.ConfigObjectGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.configurationmanagesvc.ConfigObjectManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.configurationmanagesvc.ConfigObjectManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.configurationmanagesvc.ConfigObjectManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "getsources": {
+                "className": "com.riversand.dataplatform.ds.configurationmanagesvc.ConfigObjectGetManagerBL",
+                "methodName": "getsources",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "binaryObjectManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "externalDataSizeWarnLimit": 1000012,
+          "externalDataSizeErrorLimit": 64000000,
+          "businessNamesForActors": {
+            "BinaryObjectManagerBL": "ApiService",
+            "EntityManageObjectOperationBolt": "ObjectStore",
+            "EntityManageSearchOperationBolt": "SearchStore"
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "binaryobject": {
+                "topics": {
+                  "inboundTopic": "rdpbinaryobjectmanageinbound",
+                  "bulkInboundTopic": "rdpbinaryobjectmanagebulkinbound",
+                  "uiBulkInboundTopic": "rdpbinaryobjectmanageuibulkinbound",
+                  "systemInboundTopic": "rdpbinaryobjectmanagesysteminbound",
+                  "bulkSystemInboundTopic": "rdpbinaryobjectmanagebulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpbinaryobjectmanageuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpbinaryobjectmanagehotlineinbound",
+                  "migrateInboundTopic": "rdpbinaryobjectmanagemigrateinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "binaryobjectmanage-reader": 1,
+              "binaryobjectmanage-reader-max-spout-pending": 50,
+              "binaryobjectmanage-system-reader": 1,
+              "binaryobjectmanage-system-reader-max-spout-pending": 50,
+              "binaryobjectmanage-hotline-reader": 1,
+              "binaryobjectmanage-hotline-reader-max-spout-pending": 50,
+              "binaryobjectmanage-migrate-reader": 1,
+              "binaryobjectmanage-migrate-reader-max-spout-pending": 50,
+              "binaryobjectmanage-bulk-reader": 1,
+              "binaryobjectmanage-bulk-reader-max-spout-pending": 50,
+              "binaryobjectmanage-bulksystem-reader": 1,
+              "binaryobjectmanage-bulksystem-reader-max-spout-pending": 50,
+              "binaryobjectmanage-uibulk-reader": 1,
+              "binaryobjectmanage-uibulk-reader-max-spout-pending": 50,
+              "binaryobjectmanage-uibulksystem-reader": 1,
+              "binaryobjectmanage-uibulksystem-reader-max-spout-pending": 50,
+              "binaryobjectmanage-bolt": 1,
+              "binaryobject-validation-bolt": 1,
+              "binaryobjectmanage-eventcreate-bolt": 1,
+              "binaryobjectmanage-objectcreate-bolt": 1,
+              "binaryobjectmanage-searchoperation-bolt": 1,
+              "binaryobjectmanage-searcheventcreate-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "binaryobjectmanagerequestsuccessevent"
+                }
+              ]
+            },
+            {
+              "name": "InternalEventManageSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "binaryobjectmanagerequesterrorevent"
+                }
+              ]
+            }
+          ],
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.binaryobjectmanagesvc.BinaryObjectGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "getById": {
+                "className": "com.riversand.dataplatform.ds.binaryobjectmanagesvc.BinaryObjectGetManagerBL",
+                "methodName": "getById",
+                "workerType": "fast"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.binaryobjectmanagesvc.BinaryObjectManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.binaryobjectmanagesvc.BinaryObjectManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "existsById": {
+                "className": "com.riversand.dataplatform.ds.binaryobjectmanagesvc.BinaryObjectManagerBL",
+                "methodName": "existsById",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "binaryStreamObjectService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "isCreateEventDataPersistenceEnabled": true,
+          "businessNamesForActors": {
+            "BinaryStreamObjectManagerBL": "ApiService",
+            "BinaryStreamManageObjectOperationBolt": "ObjectStore",
+            "BinaryStreamManageSearchOperationBolt": "SearchStore"
+          },
+          "defaultDataTypes": {
+            "binaryStreamDataObject": "binaryStreamObject",
+            "eventDataObject": "event"
+          }
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "binarystreamobject": {
+                "topics": {
+                  "inboundTopic": "rdpbinarystreamobjectmanageinbound",
+                  "bulkInboundTopic": "rdpbinarystreamobjectmanagebulkinbound",
+                  "uiBulkInboundTopic": "rdpbinarystreamobjectmanageuibulkinbound",
+                  "systemInboundTopic": "rdpbinarystreamobjectmanagesysteminbound",
+                  "bulkSystemInboundTopic": "rdpbinarystreamobjectmanagebulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpbinarystreamobjectmanageuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpbinarystreamobjectmanagehotlineinbound",
+                  "migrateInboundTopic": "rdpbinarystreamobjectmanagemigrateinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "binarystreamobjectmanage-reader": 1,
+              "binarystreamobjectmanage-reader-max-spout-pending": 50,
+              "binarystreamobjectmanage-system-reader": 1,
+              "binarystreamobjectmanage-system-reader-max-spout-pending": 50,
+              "binarystreamobjectmanage-hotline-reader": 1,
+              "binarystreamobjectmanage-hotline-reader-max-spout-pending": 50,
+              "binarystreamobjectmanage-migrate-reader": 1,
+              "binarystreamobjectmanage-migrate-reader-max-spout-pending": 50,
+              "binarystreamobjectmanage-bulk-reader": 1,
+              "binarystreamobjectmanage-bulk-reader-max-spout-pending": 50,
+              "binarystreamobjectmanage-bulksystem-reader": 1,
+              "binarystreamobjectmanage-bulksystem-reader-max-spout-pending": 50,
+              "binarystreamobjectmanage-uibulk-reader": 1,
+              "binarystreamobjectmanage-uibulk-reader-max-spout-pending": 50,
+              "binarystreamobjectmanage-uibulksystem-reader": 1,
+              "binarystreamobjectmanage-uibulksystem-reader-max-spout-pending": 50,
+              "binarystreamobject-validation-bolt": 1,
+              "binarystreamobjectmanage-objectcreate-bolt": 4,
+              "binarystreamobjectmanage-searchoperation-bolt": 4,
+              "binarystreamobjectmanage-searcheventcreate-bolt": 2,
+              "binarystream-subscriber-dispatcher-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "eventSubscribers": [
+            {
+              "name": "BinaryStreamSubscriber",
+              "description": "Riversand Data Platform internal event connector for t1",
+              "active": true,
+              "filters": [
+                {
+                  "filterType": "include",
+                  "dataObjectType": "binarystreamobjectevent"
+                }
+              ]
+            }
+          ],
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "prepareUpload": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "prepareUpload",
+                "workerType": "fast"
+              },
+              "prepareDownload": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "prepareDownload",
+                "workerType": "fast"
+              },
+              "uploadContinuous": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "uploadContinuous",
+                "workerType": "fast"
+              },
+              "downloadContinuous": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "downloadContinuous",
+                "workerType": "fast"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "objectexists": {
+                "className": "com.riversand.dataplatform.ds.binarystreamobjectmanagesvc.BinaryStreamObjectManagerBL",
+                "methodName": "objectExists",
+                "workerType": "fast"
+              }
+            }
+          },
+          "validationOfPlatformConfigDisabled": true,
+          "binaryStreamObjectStore": {
+            "domains": {
+              "binaryStreamDataObject": {
+                "objectTypes": {
+                  "seedDataStream": {
+                    "storageProvider": {
+                      "storageProviderId": "artifactStore",
+                      "configProperties": {
+                        "containerName": "seed-data"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "genericObjectManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "isCreateEventDataPersistenceEnabled": false,
+          "defaultMaxRecords": 100,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableBulkSystemGroomingInboundTopicType": false,
+          "businessNamesForActors": {
+            "GenericObjectManagerBL": "ApiService",
+            "GenericObjectCompareAndPersistBolt": "SearchStore"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "SearchStore": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "SearchStore": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "genericobject": {
+                "topics": {
+                  "inboundTopic": "rdpgenericobjectmanageinbound",
+                  "bulkInboundTopic": "rdpgenericobjectmanagebulkinbound",
+                  "uiBulkInboundTopic": "rdpgenericobjectmanageuibulkinbound",
+                  "systemInboundTopic": "rdpgenericobjectmanagesysteminbound",
+                  "bulkSystemInboundTopic": "rdpgenericobjectmanagebulksysteminbound",
+                  "uiBulkSystemInboundTopic": "rdpgenericobjectmanageuibulksysteminbound",
+                  "hotlineInboundTopic": "rdpgenericobjectmanagehotlineinbound",
+                  "migrateInboundTopic": "rdpgenericobjectmanagemigrateinbound",
+                  "bulkSystemGroomingInboundTopic": "rdpgenericobjectmanagebulksystemgroominginbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "genericobjectmanage-reader": 1,
+              "genericobjectmanage-reader-max-spout-pending": 50,
+              "genericobjectmanage-system-reader": 1,
+              "genericobjectmanage-system-reader-max-spout-pending": 50,
+              "genericobjectmanage-bulk-reader": 1,
+              "genericobjectmanage-bulk-reader-max-spout-pending": 50,
+              "genericobjectmanage-bulksystem-reader": 1,
+              "genericobjectmanage-bulksystem-reader-max-spout-pending": 50,
+              "genericobjectmanage-uibulk-reader": 1,
+              "genericobjectmanage-uibulk-reader-max-spout-pending": 50,
+              "genericobjectmanage-uibulksystem-reader": 1,
+              "genericobjectmanage-uibulksystem-reader-max-spout-pending": 50,
+              "genericobjectmanage-hotline-reader": 1,
+              "genericobjectmanage-hotline-reader-max-spout-pending": 50,
+              "genericobjectmanage-migrate-reader": 1,
+              "genericobjectmanage-migrate-reader-max-spout-pending": 50,
+              "genericobjectmanage-bolt": 1,
+              "genericobjectmanage-compareandpersist-bolt": 1,
+              "noOfWorkers": 1
+            }
+          },
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.genericobjectmanagesvc.GenericObjectGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "clearscroll": {
+                "className": "com.riversand.dataplatform.ds.genericobjectmanagesvc.GenericObjectGetManagerBL",
+                "methodName": "clearScroll",
+                "workerType": "fast"
+              },
+              "create": {
+                "className": "com.riversand.dataplatform.ds.genericobjectmanagesvc.GenericObjectManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "update": {
+                "className": "com.riversand.dataplatform.ds.genericobjectmanagesvc.GenericObjectManagerBL",
+                "methodName": "update",
+                "workerType": "fast"
+              },
+              "delete": {
+                "className": "com.riversand.dataplatform.ds.genericobjectmanagesvc.GenericObjectManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              },
+              "snapshotprocessinglag": {
+                "className": "com.riversand.dataplatform.ds.genericobjectmanagesvc.GenericObjectManagerBL",
+                "methodName": "snapshotProcessingLag",
+                "workerType": "slow"
+              },
+              "deletebyquery": {
+                "className": "com.riversand.dataplatform.ds.genericobjectmanagesvc.GenericObjectDeleteManagerBL",
+                "methodName": "deleteByQuery",
+                "workerType": "slow"
+              }
+            }
+          }
+        }
+      },
+      "impactManageService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 2000,
+          "impactProcessConfig": {
+            "enableImpactProcessing": true,
+            "impactProcessFlags": {
+              "businessRule": false,
+              "businessCondition": false,
+              "ruleContextMappings": false,
+              "contentTemplateModel": false,
+              "templateQualificationConfig": false,
+              "authorizationModel": true
+            }
+          },
+          "businessNamesForActors": {
+            "ImpactManagerBL": "ApiService"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "graphsource": {
+                "topics": {
+                  "inboundTopic": "rdpimpactidentifyinbound"
+                }
+              },
+              "graphtarget": {
+                "topics": {
+                  "inboundTopic": "rdpimpactexecuteinbound"
+                }
+              }
+            }
+          },
+          "restApi": {
+            "actions": {
+              "identify": {
+                "className": "com.riversand.dataplatform.ds.entitygraphmanagesvc.ImpactManagerBL",
+                "methodName": "identify",
+                "workerType": "fast"
+              },
+              "execute": {
+                "className": "com.riversand.dataplatform.ds.entitygraphmanagesvc.ImpactManagerBL",
+                "methodName": "execute",
+                "workerType": "fast"
+              }
+            }
+          }
+        }
+      },
+      "impactIdentifyService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 2000,
+          "businessNamesForActors": {
+            "ImpactManagerBL": "ApiService"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "graphsource": {
+                "topics": {
+                  "inboundTopic": "rdpimpactidentifyinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "impactidentify-reader": 1,
+              "impactidentify-reader-max-spout-pending": 50,
+              "impactidentify-extractandaggregate-bolt": 1,
+              "impactidentify-findentity-bolt": 1,
+              "impactidentify-load-bolt": 1,
+              "noOfWorkers": 1
+            }
+          }
+        }
+      },
+      "impactExecuteService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 2000,
+          "businessNamesForActors": {
+            "ImpactManagerBL": "ApiService"
+          },
+          "doneCriteria": [
+            {
+              "ApiService": "error",
+              "status": "error"
+            },
+            {
+              "ApiService": "success",
+              "status": "success"
+            }
+          ]
+        },
+        "platformSpecific": {
+          "messageBroker": {
+            "domains": {
+              "graphtarget": {
+                "topics": {
+                  "inboundTopic": "rdpimpactexecuteinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "impactexecute-reader": 1,
+              "impactexecute-reader-max-spout-pending": 50,
+              "impactexecute-extractandaggregate-bolt": 1,
+              "impactexecute-split-bolt": 1,
+              "impactexecute-load-bolt": 1,
+              "noOfWorkers": 1
+            }
+          }
+        }
+      },
+      "matchService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": 100
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "search": {
+                "className": "com.riversand.dataplatform.ds.matchsvc.MatchManagerBL",
+                "methodName": "search",
+                "workerType": "medium"
+              },
+              "match": {
+                "className": "com.riversand.dataplatform.ds.matchsvc.MatchManagerBL",
+                "methodName": "nextGenMatch",
+                "workerType": "medium"
+              }
+            }
+          }
+        }
+      },
+      "diagnosticService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "defaultMaxRecords": "1000"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "get": {
+                "className": "com.riversand.dataplatform.ds.diagnosticsvc.DiagnosticServiceGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "validate": {
+                "className": "com.riversand.dataplatform.ds.diagnosticsvc.DiagnosticServiceGetManagerBL",
+                "methodName": "validate",
+                "workerType": "slow"
+              },
+              "getuptimereport": {
+                "className": "com.riversand.dataplatform.ds.diagnosticsvc.DiagnosticServiceGetManagerBL",
+                "methodName": "getUptimeReport",
+                "workerType": "medium"
+              },
+              "peekmessage": {
+                "className": "com.riversand.dataplatform.ds.diagnosticsvc.DiagnosticServiceGetManagerBL",
+                "methodName": "peekMessage",
+                "workerType": "slow"
+              }
+            }
+          }
+        }
+      },
+      "modelGovernService": {
+        "serviceSpecific": {
+          "logLevel": "info"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "validate": {
+                "className": "com.riversand.dataplatform.ds.modelgovernsvc.ModelGovernManagerBL",
+                "methodName": "validate",
+                "workerType": "medium"
+              }
+            }
+          },
+          "messageBroker": {},
+          "computeSystem": {}
+        }
+      },
+      "rsAnalyticsService": {
+        "serviceSpecific": {
+          "logLevel": "info",
+          "isVisualizationEnabled": false,
+          "isOwnershipPermissionEnabled": false,
+          "enableSystemInboundTopicType": false,
+          "enableBulkInboundTopicType": false,
+          "enableUIBulkInboundTopicType": false,
+          "enableBulkSystemInboundTopicType": false,
+          "enableUIBulkSystemInboundTopicType": false,
+          "enableHotlineInboundTopicType": false,
+          "enableMigrateInboundTopicType": false,
+          "enableLargeObjectInboundTopicType": false,
+          "visualizationURL": "http://localhost:5601/s/"
+        },
+        "platformSpecific": {
+          "restApi": {
+            "actions": {
+              "create": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.AnalyticsServiceManagerBL",
+                "methodName": "create",
+                "workerType": "fast"
+              },
+              "loadentities": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.AnalyticsServiceManagerBL",
+                "methodName": "loadEntities",
+                "workerType": "medium"
+              },
+              "loadgovernobjects": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.AnalyticsServiceManagerBL",
+                "methodName": "loadGovernObjects",
+                "workerType": "medium"
+              },
+              "getcountbyaggregation": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.AnalyticsServiceGetManagerBL",
+                "methodName": "getCountByAggregation",
+                "workerType": "medium"
+              },
+              "selfserviceget": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.VisualizationSelfServiceGetManagerBL",
+                "methodName": "get",
+                "workerType": "medium"
+              },
+              "selfserviceprocess": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.VisualizationSelfServiceManagerBL",
+                "methodName": "process",
+                "workerType": "fast"
+              },
+              "selfservicepublish": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.VisualizationSelfServiceManagerBL",
+                "methodName": "publishDashboard",
+                "workerType": "fast"
+              },
+              "selfservicerefreshattributefilter": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.VisualizationSelfServiceManagerBL",
+                "methodName": "refreshKibanaAttributeFilter",
+                "workerType": "medium"
+              },
+              "selfservicedelete": {
+                "className": "com.riversand.dataplatform.ds.analyticssvc.VisualizationSelfServiceManagerBL",
+                "methodName": "delete",
+                "workerType": "fast"
+              }
+            }
+          },
+          "messageBroker": {
+            "domains": {
+              "entity": {
+                "topics": {
+                  "inboundTopic": "rdpanalyticsinbound",
+                  "migrateInboundTopic": "rdpanalyticsmigrateinbound",
+                  "largeObjectInboundTopic": "rdpanalyticslargeobjectinbound"
+                }
+              },
+              "visualization": {
+                "topics": {
+                  "inboundTopic": "rdpvisualizationinbound"
+                }
+              }
+            }
+          },
+          "computeSystem": {
+            "parallelisms": {
+              "analytics-reader": 1,
+              "analytics-reader-max-spout-pending": 50,
+              "analytics-system-reader": 1,
+              "analytics-system-reader-max-spout-pending": 50,
+              "analytics-bulk-reader": 1,
+              "analytics-bulk-reader-max-spout-pending": 50,
+              "analytics-bulksystem-reader": 1,
+              "analytics-bulksystem-reader-max-spout-pending": 50,
+              "analytics-uibulk-reader": 1,
+              "analytics-uibulk-reader-max-spout-pending": 50,
+              "analytics-uibulksystem-reader": 1,
+              "analytics-uibulksystem-reader-max-spout-pending": 50,
+              "analytics-hotline-reader": 1,
+              "analytics-hotline-reader-max-spout-pending": 50,
+              "analytics-migrate-reader": 1,
+              "analytics-migrate-reader-max-spout-pending": 50,
+              "analytics-largeobject-reader": 1,
+              "analytics-largeobject-reader-max-spout-pending": 2,
+              "analytics-visualization-reader": 1,
+              "analytics-visualization-reader-max-spout-pending": 5,
+              "analytics-identification-bolt": 1,
+              "visualization-governobject-bolt": 1,
+              "visualization-entityobject-bolt": 1,
+              "visualization-dashboardobject-bolt": 1,
+              "noOfWorkers": 1
+            }
+          }
+        }
+      }
+    },
+    "storageProviders": {
+      "defaultS3Store": {
+        "configProperties": {
+          "type": "AWS_S3",
+          "S3Region": "@@S3_REGION@@",
+          "S3CredentialsType": "@@S3_CREDENTIALS_TYPE@@",
+          "S3AccessKey": "@@S3_ACCESS_KEY@@",
+          "S3SecretKey": "@@S3_SECRET_KEY@@",
+          "containerName": "dataplatform-@@ENV_NAME@@-data-store",
+          "validityDurationInMins": 1440
+        }
+      },
+      "artifactStore": {
+        "configProperties": {
+          "type": "Azure_Blob",
+          "storageConnectionString": "DefaultEndpointsProtocol=https;AccountName=rsdeploymentfiles;AccountKey=QoKhOhwRGDmyM3ZB2hrpbjlcZv4a61fKjOws2SkjP/PAInHj0hTWoe+EUqjOIF1rg8jUMypdB47zIDll80BD3g==;EndpointSuffix=core.windows.net",
+          "validityDurationInMins": 1440
+        }
+      },
+      "defaultAzureBlobStore": {
+        "configProperties": {
+          "type": "Azure_Blob",
+          "storageConnectionString": "@@AZURE_STORAGE_RESOURCE_CONNECTION_STRING@@",
+          "containerName": "dataplatform-@@ENV_NAME@@-data-store",
+          "validityDurationInMins": 1440
+        }
+      },
+      "nullObjectStore": {
+        "configProperties": {
+          "type": "NullObjectStore"
+        }
+      }
+    },
+    "containers": {
+      "zookeeper": {
+        "nodes": [
+          "localhost"
+        ],
+        "port": 2181,
+        "clientSessionTimeout": 30000
+      },
+      "kafka": {
+        "nodes": [
+          "localhost"
+        ],
+        "port": 9092,
+        "consumerGroup": "riversand/rdp",
+        "compressionType": "snappy",
+        "acks": "1",
+        "maxRequestSize": 9000000,
+        "deliveryTimeoutMs": 60000,
+        "defaultPartitionCount": 1,
+        "defaultReplicationFactor": 1
+      },
+      "elastic": {
+        "clusterName": "rdpescluster",
+        "sniffingEnabled": false,
+        "nodes": [
+          "localhost"
+        ],
+        "port": 9300,
+        "requestTimeoutMs": 60000
+      },
+      "visualization": {
+        "clusterName": "rdpescluster",
+        "sniffingEnabled": false,
+        "nodes": [
+          "localhost"
+        ],
+        "port": 9300
+      },
+      "netty": {
+        "nodes": [
+          "localhost"
+        ],
+        "restApiPrefix": "/api",
+        "restHttpPort": 8085,
+        "restSslPort": 8443,
+        "restSslEnabled": false,
+        "acceptorThreadPoolSize": 1,
+        "ioThreadPoolSize": 1,
+        "restClientTimeoutMs": 600000,
+        "connectTimeoutMs": 60000,
+        "requestTimeoutMs": 300000,
+        "requestLongRunningMs": 1000,
+        "metricsCheckIntervalMs": 60000,
+        "shutdownTimeoutMs": 1000,
+        "defaultWorkerType": "medium",
+        "workerGroups": [
+          {
+            "workerType": "fast",
+            "workerThreadPoolSize": 1,
+            "maxPendingTasks": 10,
+            "nonServiceEndpoints": [
+              "/",
+              "/favicon.ico"
+            ]
+          },
+          {
+            "workerType": "medium",
+            "workerThreadPoolSize": 2,
+            "maxPendingTasks": 20
+          },
+          {
+            "workerType": "slow",
+            "workerThreadPoolSize": 1,
+            "maxPendingTasks": 10
+          }
+        ]
+      },
+      "storm": {
+        "nimbusSeeds": [
+          "localhost"
+        ],
+        "nimbusThriftPort": "6627",
+        "retryLimit": 10,
+        "retryInitialDelayMs": 100,
+        "retryDelayMultiplier": 5,
+        "retryDelayMaxMs": 600000,
+        "maxSpoutPending": 1000,
+        "messageTimeoutSecs": 100000,
+        "partitionRefreshPeriodMs": 60000,
+        "defaultTopologyConfig": {
+          "topology.backpressure.enable": false,
+          "topology.executor.receive.buffer.size": 16,
+          "topology.executor.send.buffer.size": 16
+        }
+      },
+      "nginx": {
+        "sslEnabled": true,
+        "sslPort": 443,
+        "httpPort": 80,
+        "nodes": [
+          "localhost.riversand.com"
+        ]
+      }
+    },
+    "restClientConfig": {
+      "socketKeepAlive": true,
+      "socketTimeoutMs": 600000,
+      "connectionRequestTimeoutMs": 600000,
+      "connectionTimeoutMs": 5000,
+      "maxConnectionTotal": 16,
+      "maxConnectionsPerRoute": 2,
+      "maxIdleTimeMs": 60000,
+      "validateAfterInactivityMs": 5000,
+      "retryInterval": 5000,
+      "maxRetries": 3
+    },
+    "dnsServerConfig": {
+      "apiEndpoint": "https://api.ote-godaddy.com/v1/domains/example.com/records/A/%s",
+      "authKey": "authKey",
+      "authSecret": "authSecret",
+      "ttl": 3600,
+      "addDnsEntryEnabled": false
+    },
+    "restClients": [
+      {
+        "clientId": "rufClient",
+        "inboundTopicType": "inboundTopic",
+        "useSystemTopicType": "false"
+      },
+      {
+        "clientId": "copClient",
+        "inboundTopicType": "bulkInboundTopic",
+        "useSystemTopicType": "false"
+      },
+      {
+        "clientId": "governanceClient",
+        "inboundTopicType": "inboundTopic",
+        "useSystemTopicType": "false"
+      },
+      {
+        "clientId": "rsdamClient",
+        "inboundTopicType": "bulkInboundTopic",
+        "useSystemTopicType": "false"
+      },
+      {
+        "clientId": "rapClient",
+        "inboundTopicType": "bulkInboundTopic",
+        "useSystemTopicType": "true"
+      }
+    ],
+    "messageConfigURI": "@@SOURCE_CONFIG_PATH@@messageconfig.json",
+    "tenantConfig": {
+      "isFileServiceEnabled": true,
+      "isConfigServiceEnabled": false,
+      "tenantServiceConfigsURI": {
+        "@@TENANT_ID@@": "@@SOURCE_CONFIG_PATH@@tenantserviceconfig.json"
+      }
+    }
+  }

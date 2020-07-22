@@ -1,0 +1,20 @@
+{
+	"dashboards": {
+		"ids": [
+			"b0daf4c0-9f24-11ea-b351-6599fea0d276"
+		],
+		"files": [
+			"SampleReport.json"
+		]
+	},
+	"indexpatterns": [
+		"visualizationentityindex"
+	],
+	"visualizations": {
+		"ids": [
+			"8b0d5ad0-9a79-11ea-a8f8-03cf5bb0303a",
+			"6c62ba30-9f24-11ea-b351-6599fea0d276"
+		],
+		"files": []
+	}
+}

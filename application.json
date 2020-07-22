@@ -1,0 +1,10 @@
+{
+    "id": "helloworld",
+    "description": "This is a sample application",
+    "sdkDependencies": {
+        "uiPluginSDK": "1.2.0",
+        "analyticsSDK": "1.0.0",
+        "connectorsSDK": "1.1.0",
+        "visualizationSDK": "1.3.0"
+    }
+}

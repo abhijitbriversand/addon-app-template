@@ -1,0 +1,54 @@
+{
+    "name": "@riversandtechnologies/addon-app-template",
+    "version": "1.0.63",
+    "description": "{{PLUGIN_DESC}}",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/riversandtechnologies/addon-app-template.git"
+    },
+    "engines": {
+        "node": ">=10.0"
+    },
+    "license": "",
+    "module": "index.js",
+    "scripts": {
+        "deps": "npm install",
+        "build": "ruf-apps-cli compile && ruf-apps-cli create && ruf-apps-cli deploy",
+        "watch": "watch 'npm run build'",
+        "format:check": "prettier --list-different \"*/**/*.{js, json, html}\"",
+        "format:staged": "pretty-quick --staged",
+        "format:all": "prettier --write \"*/**/*.{js, json, html}\"",
+        "lint:check": "node node_modules/eslint/bin/eslint --ext .js,.json,.html \"*/**/*.{js, json, html}\"",
+        "lint:all": "node node_modules/eslint/bin/eslint --ext .js,.json,.html --fix \"*/**/*.{js, json, html}\""
+    },
+    "dependencies": {
+        "config": "^3.2.4",
+        "ui-platform-dataaccess": "github:riversandtechnologies/ui-platform-dataaccess#release-2020-r3",
+        "ui-platform-elements": "github:riversandtechnologies/ui-platform-elements#release-2020-r3",
+        "ui-platform-tools": "github:riversandtechnologies/ui-platform-tools#release-2020-r3",
+        "ui-platform-utils": "github:riversandtechnologies/ui-platform-utils#release-2020-r3",
+        "underscore": "^1.9.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-riversand": "github:riversandtechnologies/eslint-config-riversand#master",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.7",
+        "prettier": "^2.0.5",
+        "pretty-quick": "^2.0.1",
+        "watch": "^1.0.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*/**/*.js": [
+            "npm run lint:all",
+            "npm run format:staged"
+        ]
+    },
+    "author": "Riversand Technologies, Inc"
+}

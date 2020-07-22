@@ -1,0 +1,100 @@
+{
+  "executionContext": {
+    "tenantId": "connectorsedev",
+    "userId": "gdsnadmin@riversand.com",
+    "userRole": "admin",
+    "ownershipData": "Nike",
+    "originatingClientId": "rdpclient",
+    "clientId": "rdpclient"
+  },
+  "connectProfile": {
+    "id": "sys_import_connectors_box_syndicate_assets_base",
+    "name": "sys_import_connectors_box_syndicate_assets_base",
+    "type": "integrationprofile",
+    "integrationType": "System",
+    "isEnabled": "true",
+    "taskSubType": "SYNDICATE",
+    "isMergeableWithCustom": true,
+    "collect": {
+      "filter": {
+        "include": {
+          "queryFields": {
+            "attributes": []
+          },
+          "typesCriterion": {
+            "product": {
+              "queryFields": {
+                "relatedEntitiesRelationships": [
+                  "hasimages"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "channel": [
+        {
+          "settings": {
+            "type": "RSJSON",
+            "version": "1.1"
+          },
+          "type": "rdpConnector"
+        }
+      ],
+      "format": {
+        "settings": {
+          "encoding": "utf8",
+          "additionalSettings": {}
+        },
+        "type": "BOXRESPONSEJSON",
+        "version": "1.1"
+      },
+      "isBinaryStreamPersistent": "false"
+    },
+    "transform": {
+      "settings": {
+        "nullRecordTransformer": "true"
+      }
+    },
+    "publish": {
+      "format": {
+        "settings": {
+          "channelSettings": {
+            "serviceSettings": {
+              "name": "Boxdotcom",
+              "id": "rs-boxhub",
+              "hub": "RSHub",
+              "isEnabled": "true",
+              "syndicationSourceContext": {
+                "contextName": "self",
+                "contextValue": "self"
+              },
+              "settings": {}
+            },
+            "syndicationServiceConfigSettings": {
+              "isEnabled": true,
+              "attributes": {
+                "serviceName": {
+                  "value": "Amazon Seller Central"
+                },
+                "serviceIdentifier": {
+                  "value": "d1576b4b-a6bd-4777-82f1-504403f49a33"
+                }
+              },
+              "serviceSettings": {
+                "settings": {},
+                "model": " "
+              }
+            },
+            "hubSettings": {}
+          },
+          "additionalSettings": {}
+        },
+        "type": "RSJSON",
+        "batchSize": 1,
+        "version": "1.1"
+      },
+      "isBinaryStreamPersistent": "false"
+    }
+  }
+}

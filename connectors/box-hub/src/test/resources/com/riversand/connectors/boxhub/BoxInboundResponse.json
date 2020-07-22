@@ -1,0 +1,84 @@
+{
+  "type": "webhook_event",
+  "id": "0bc52c2f-418b-45cf-8335-4ea620a9edb2",
+  "created_at": "2020-05-05T16:29:42-07:00",
+  "trigger": "FILE.UPLOADED",
+  "webhook": {
+    "id": "289809908",
+    "type": "webhook"
+  },
+  "created_by": {
+    "type": "user",
+    "id": "12527020848",
+    "name": "box-connector",
+    "login": "AutomationUser_1040604_1fDAerQAi2@boxdevedition.com"
+  },
+  "source": {
+    "id": "661495324084",
+    "type": "file",
+    "file_version": {
+      "type": "file_version",
+      "id": "701506945684",
+      "sha1": "4bf6a9cf23f91030cd10681fc6cf3d0b6dddd015"
+    },
+    "sequence_id": "0",
+    "etag": "0",
+    "sha1": "4bf6a9cf23f91030cd10681fc6cf3d0b6dddd015",
+    "name": "connectorsedev#@#MZScC0AgRnG6RKth6QeOPA.jpg",
+    "description": "",
+    "size": 100939,
+    "path_collection": {
+      "total_count": 2,
+      "entries": [
+        {
+          "type": "folder",
+          "id": "0",
+          "sequence_id": null,
+          "etag": null,
+          "name": "All Files"
+        },
+        {
+          "type": "folder",
+          "id": "111892981901",
+          "sequence_id": "0",
+          "etag": "0",
+          "name": "box-connector"
+        }
+      ]
+    },
+    "created_at": "2020-05-05T16:29:42-07:00",
+    "modified_at": "2020-05-05T16:29:42-07:00",
+    "trashed_at": null,
+    "purged_at": null,
+    "content_created_at": "2020-05-05T16:29:42-07:00",
+    "content_modified_at": "2020-05-05T16:29:42-07:00",
+    "created_by": {
+      "type": "user",
+      "id": "12527020848",
+      "name": "box-connector",
+      "login": "AutomationUser_1040604_1fDAerQAi2@boxdevedition.com"
+    },
+    "modified_by": {
+      "type": "user",
+      "id": "12527020848",
+      "name": "box-connector",
+      "login": "AutomationUser_1040604_1fDAerQAi2@boxdevedition.com"
+    },
+    "owned_by": {
+      "type": "user",
+      "id": "12527020848",
+      "name": "box-connector",
+      "login": "AutomationUser_1040604_1fDAerQAi2@boxdevedition.com"
+    },
+    "shared_link": null,
+    "parent": {
+      "type": "folder",
+      "id": "111892981901",
+      "sequence_id": "0",
+      "etag": "0",
+      "name": "box-connector"
+    },
+    "item_status": "active"
+  },
+  "additional_info": []
+}

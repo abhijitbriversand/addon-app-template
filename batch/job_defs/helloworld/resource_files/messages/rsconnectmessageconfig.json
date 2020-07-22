@@ -1,0 +1,4195 @@
+{
+    "rsConnectService": {
+      "resources": {
+        "text": {
+          "messages": {
+            "RSC1001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity transformation failed with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "The entity transformation failed with error: %s"
+                }
+              }
+            },
+            "RSC1002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Binary object has been submitted for create with work automation id : %s. Please check back after 10 mins.",
+                  "messageType": "INFO",
+                  "messageDesc": "Binary object has been submitted for create with work automation id : %s. Please check back after 10 mins."
+                }
+              }
+            },
+            "RSC1003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The file process failed with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "The file process failed with error:"
+                }
+              }
+            },
+            "RSC1004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to save overrides with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to save overrides with error:"
+                }
+              }
+            },
+            "RSC1005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get the configuration with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to get the configuration with error:"
+                }
+              }
+            },
+            "RSC1010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to process inbound channel: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Refer log file for details of the exception."
+                }
+              }
+            },
+            "RSC1011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to process transform: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Refer log file for details of the exception."
+                }
+              }
+            },
+            "RSC1012": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to process outbound channel: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Refer log file for details of the exception."
+                }
+              }
+            },
+            "RSC1013": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Inbound task has started",
+                  "messageType": "INFO",
+                  "messageDesc": "Inbound bolt started."
+                }
+              }
+            },
+            "RSC1014": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Inbound task has completed",
+                  "messageType": "INFO",
+                  "messageDesc": "Inbound bolt completed."
+                }
+              }
+            },
+            "RSC1015": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Extract-transform-load task has started.",
+                  "messageType": "INFO",
+                  "messageDesc": "Transform bolt read message from Transform Topic."
+                }
+              }
+            },
+            "RSC1016": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Extract-transform-load task has completed, recordCount = %d.",
+                  "messageType": "INFO",
+                  "messageDesc": "Transform bolt has completed."
+                }
+              }
+            },
+            "RSC1019": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Folder connector has submitted task process file = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "Folder connector finished - pushed message to Inbound Topic."
+                }
+              }
+            },
+            "RSC1020": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Folder connector did not find any files to process, folder = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "Folder connector did not find any files to process, folder = %s"
+                }
+              }
+            },
+            "RSC1021": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity import task has been queued.",
+                  "messageType": "INFO",
+                  "messageDesc": "Process REST API has published message to transform topic."
+                }
+              }
+            },
+            "RSC1022": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity import task is received for processing.",
+                  "messageType": "INFO",
+                  "messageDesc": "Process REST API - import task is received for processing"
+                }
+              }
+            },
+            "RSC1023": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to transform record, id =  %s: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "System had a problem transforming a record found in the source."
+                }
+              }
+            },
+            "RSC1024": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Invalid transform outbound format configuration, type = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Profile mapping configuration is invalid, outbound format configuration is not supported."
+                }
+              }
+            },
+            "RSC1025": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The entity export task has been queued.",
+                  "messageType": "INFO",
+                  "messageDesc": "Publish REST API has published message to inbound topic."
+                }
+              }
+            },
+            "RSC1027": {
+              "locales": {
+                "en-US": {
+                  "messageText": "S3 Bucket connector has submitted task to process object = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "S3 Bucket connector finished - pushed message to Inbound Topic."
+                }
+              }
+            },
+            "RSC1028": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Kinesis Stream connector for stream [%s] has submitted record with sequence number [%s]",
+                  "messageType": "INFO",
+                  "messageDesc": "Kinesis Stream connector successfully pushed message to Kinesis Stream."
+                }
+              }
+            },
+            "RSC1029": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Kinesis Stream connector for stream [%s] has received record with sequence number [%s]",
+                  "messageType": "INFO",
+                  "messageDesc": "Kinesis Stream connector successfully received a record from Kinesis Stream."
+                }
+              }
+            },
+            "RSC1030": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Record saved successfully.",
+                  "messageType": "INFO",
+                  "messageDesc": "Record saved successfully."
+                }
+              }
+            },
+            "RSC1031": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Record Id %s transform started.",
+                  "messageType": "INFO",
+                  "messageDesc": "Record transform started."
+                }
+              }
+            },
+            "RSC1032": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Record Id %s transform completed.",
+                  "messageType": "INFO",
+                  "messageDesc": "Record transform completed."
+                }
+              }
+            },
+            "RSC1033": {
+              "locales": {
+                "en-US": {
+                  "messageText": "User Id not found in Request.",
+                  "messageType": "ERROR",
+                  "messageDesc": "User Id not found in Request."
+                }
+              }
+            },
+            "RSC1034": {
+              "locales": {
+                "en-US": {
+                  "messageText": "User role not found in Request.",
+                  "messageType": "ERROR",
+                  "messageDesc": "User role not found in Request."
+                }
+              }
+            },
+            "RSC1036": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No match found in the model, source field = %s.",
+                  "messageType": "WARNING",
+                  "messageDesc": "Source field did not find a match in the destination model. Add an override to the profile mapping config to define how to map this field."
+                }
+              }
+            },
+            "RSC1037": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No match found in the model, field will be excluded from the field map, source field = %s.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Source field did not find a match in the destination model. Add an override to the profile mapping config to define how to map this field."
+                }
+              }
+            },
+            "RSC1038": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No match found in the model, the default field mapping strategy best guess will be returned in the record, source field = %s.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Source field did not find a match in the destination model. Add an override to the profile mapping config to define how to map this field."
+                }
+              }
+            },
+            "RSC1039": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transfrom completed with errors. %s.",
+                  "messageType": "ERROR",
+                  "messageDesc": "The transform completed for this batch of records and the records will be sent to the destination. There were issues encountered during the transform process that may require user attention."
+                }
+              }
+            },
+            "RSC1041": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Field value is not found in source data, field = %s",
+                  "messageType": "WARN",
+                  "messageDesc": "A field in the model was not found in the source data. The field was excluded from the output entity because not value was found."
+                }
+              }
+            },
+            "RSC1042": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to set context in outbound record, item not found, item = %s, context in profile = %s, context in data = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Unable to add the context to a row of data. Tried to match the context defined in the profile, but failed to match."
+                }
+              }
+            },
+            "RSC1043": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to set context value, set value does not support multiple field macros are defined in an item, item = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "The feature which save contexts values into the output record does not support multiple field macros to be defined in a single context key/value pair. Edit the profile to change the context definition."
+                }
+              }
+            },
+            "RSC1044": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transformation failed for record Id = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Transformation of record failed."
+                }
+              }
+            },
+            "Req001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Required attribute",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "MinLen001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Minimum length",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "MaxLen001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Maximum length",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "AlVal001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Allowed value",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Prec001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Precision",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range from inclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range to inclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range from exclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range to exclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range to inclusive from exclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range006": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range to inclusive from inclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range007": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range to exclusive from exclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "Range008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Range to exclusive from inclusive",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "InvalidVal001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Invalid value",
+                  "messageType": "ERROR",
+                  "messageDesc": "no params"
+                }
+              }
+            },
+            "RSC1045": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Inbound channel: connector = {}, collectQueue = {}, transformQueue = {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Inbound channel."
+                }
+              }
+            },
+            "RSC1046": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Outbound channel: {}, taskId = {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Outbound channel."
+                }
+              }
+            },
+            "RSC1047": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Expected hadoop node count is only 1. taking the first node for HDFS.",
+                  "messageType": "INFO",
+                  "messageDesc": "Expected hadoop node count is only 1. taking the first node for HDFS."
+                }
+              }
+            },
+            "RSC1048": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get appconfig boolean value, field = {}: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Failed to get appconfig boolean value."
+                }
+              }
+            },
+            "RSC1049": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The file connector found a folder, expected only files', folder = '{}'.",
+                  "messageType": "INFO",
+                  "messageDesc": "The file connector found a folder, expected only files."
+                }
+              }
+            },
+            "RSC1050": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: KinesisRecordConnector initialized.",
+                  "messageType": "INFO",
+                  "messageDesc": "TRSConnect: KinesisRecordConnector initialized.."
+                }
+              }
+            },
+            "RSC1051": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: Initializing record processor for shard: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: Initializing record processor for shard."
+                }
+              }
+            },
+            "RSC1052": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: [{}] Processing {} records from shard {}",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: Processing records from shard."
+                }
+              }
+            },
+            "RSC1053": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: Worker Shutdown initiated while processing shard: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: Worker Shutdown initiated while processing shard."
+                }
+              }
+            },
+            "RSC1054": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Exception while processing records.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Exception while processing records."
+                }
+              }
+            },
+            "RSC1055": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Couldn't process record with key: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Couldn't process record."
+                }
+              }
+            },
+            "RSC1056": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KinesisStream Received Sequence# [{}] Record Data: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "KinesisStream Received Sequence."
+                }
+              }
+            },
+            "RSC1057": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KinesisStream Published Sequence# [{}] with taskId [{}] parentId [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "KinesisStream Published Sequence."
+                }
+              }
+            },
+            "RSC1058": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Checkpoint attempt for shard {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Checkpoint attempt for shard."
+                }
+              }
+            },
+            "RSC1059": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Checkpoint failed.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Checkpoint failed."
+                }
+              }
+            },
+            "RSC1060": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transient issue.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Transient issue."
+                }
+              }
+            },
+            "RSC1061": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Cannot save checkpoint to the DynamoDB table used by the Amazon Kinesis Client Library.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Cannot save checkpoint to the DynamoDB table used by the Amazon Kinesis Client Library."
+                }
+              }
+            },
+            "RSC1062": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Interrupted sleep. Can ignore this exception.",
+                  "messageType": "INFO",
+                  "messageDesc": "Interrupted sleep. Can ignore this exception."
+                }
+              }
+            },
+            "RSC1063": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: KinesisRecordProcessorFactory initialized.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: KinesisRecordProcessorFactory initialized"
+                }
+              }
+            },
+            "RSC1064": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: createProcessor call received.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: createProcessor call received."
+                }
+              }
+            },
+            "RSC1065": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: Connector initialized successfully.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: Connector initialized successfully."
+                }
+              }
+            },
+            "RSC1066": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: getInputStream called.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: getInputStream called."
+                }
+              }
+            },
+            "RSC1067": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: getInputStream finished.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: getInputStream finished."
+                }
+              }
+            },
+            "RSC1068": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: Kinesis Worker created.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: Kinesis Worker created."
+                }
+              }
+            },
+            "RSC1069": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: Running {} to process stream {} as worker {}...",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: Running to process stream as worker."
+                }
+              }
+            },
+            "RSC1070": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSConnect: Kinesis Worker process exception while reading records.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect: Kinesis Worker process exception while reading records."
+                }
+              }
+            },
+            "RSC1071": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Successfully put record of size: {} bytes to Stream: {}, ShardID: {}, SequenceNumber: {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSKinesis:writeStream Successfully put record."
+                }
+              }
+            },
+            "RSC1072": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in getting combined model data.",
+                  "messageType": "INFO",
+                  "messageDesc": "Error in getting combined model data."
+                }
+              }
+            },
+            "RSC1073": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in combining with govern data.",
+                  "messageType": "INFO",
+                  "messageDesc": "Error in combining with govern data."
+                }
+              }
+            },
+            "RSC1074": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Multiple parents found for sku.",
+                  "messageType": "INFO",
+                  "messageDesc": "Multiple parents found for sku."
+                }
+              }
+            },
+            "RSC1075": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No relationships found.",
+                  "messageType": "INFO",
+                  "messageDesc": "No relationships found."
+                }
+              }
+            },
+            "RSC1076": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No entities found.",
+                  "messageType": "INFO",
+                  "messageDesc": "No entities found."
+                }
+              }
+            },
+            "RSC1077": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Warn - No match found",
+                  "messageType": "Warn",
+                  "messageDesc": "warn - No match found"
+                }
+              }
+            },
+            "RSC1078": {
+              "locales": {
+                "en-US": {
+                  "messageText": "error - Multiple match found.",
+                  "messageType": "INFO",
+                  "messageDesc": "error - Multiple match found."
+                }
+              }
+            },
+            "RSC1079": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in finding identifier attribute.",
+                  "messageType": "INFO",
+                  "messageDesc": "Error in finding identifier attribute."
+                }
+              }
+            },
+            "RSC1080": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Response from match service has invalid format: response = {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Response from match service has invalid format."
+                }
+              }
+            },
+            "RSC1081": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Response from match service has invalid format, entities not found: response ={}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Response from match service has invalid format, entities not found."
+                }
+              }
+            },
+            "RSC1082": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Downloading object [{}] from bucket [{}] from region [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Downloading object from S3 bucket."
+                }
+              }
+            },
+            "RSC1083": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Uploading object [{}] to S3 bucket [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Uploading object to S3 bucket."
+                }
+              }
+            },
+            "RSC1084": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Listing objects of S3 bucket {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Listening objects of S3 bucket."
+                }
+              }
+            },
+            "RSC1085": {
+              "locales": {
+                "en-US": {
+                  "messageText": "downloadDataExcel error.",
+                  "messageType": "INFO",
+                  "messageDesc": "downloadDataExcel error."
+                }
+              }
+            },
+            "RSC1086": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Collect operation raised exception.",
+                  "messageType": "INFO",
+                  "messageDesc": "Collect operation raised exception."
+                }
+              }
+            },
+            "RSC1087": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DownloadModelExcel error.",
+                  "messageType": "INFO",
+                  "messageDesc": "DownloadModelExcel error."
+                }
+              }
+            },
+            "RSC1088": {
+              "locales": {
+                "en-US": {
+                  "messageText": "GenerateFieldMap failed.",
+                  "messageType": "ERROR",
+                  "messageDesc": "GenerateFieldMap failed."
+                }
+              }
+            },
+            "RSC1089": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transform failed.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Transform failed."
+                }
+              }
+            },
+            "RSC1090": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Process operation raised exception.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Process operation raised exception."
+                }
+              }
+            },
+            "RSC1091": {
+              "locales": {
+                "en-US": {
+                  "messageText": "processModel error.",
+                  "messageType": "ERROR",
+                  "messageDesc": "processModel error."
+                }
+              }
+            },
+            "RSC1092": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Publish operation raised exception.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Publish operation raised exception."
+                }
+              }
+            },
+            "RSC1093": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transform bolt failed to initialize.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Transform bolt failed to initialize."
+                }
+              }
+            },
+            "RSC1094": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Collect bolt failed to initialize.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Collect bolt failed to initialize."
+                }
+              }
+            },
+            "RSC1095": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Publish bolt failed to initialize.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Publish bolt failed to initialize."
+                }
+              }
+            },
+            "RSC1096": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Collect bolt failed to execute.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Collect bolt failed to execute."
+                }
+              }
+            },
+            "RSC1097": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transform bolt failed to execute.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Transform bolt failed to execute."
+                }
+              }
+            },
+            "RSC1098": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Publish bolt failed to execute.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Publish bolt failed to execute."
+                }
+              }
+            },
+            "RSC1099": {
+              "locales": {
+                "en-US": {
+                  "messageText": "GetHeaderField failed.",
+                  "messageType": "ERROR",
+                  "messageDesc": "GetHeaderField failed."
+                }
+              }
+            },
+            "RSC1101": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KinesisStream with Sequence# = [{}] and taskId = [{}] is missing the binaryObjectId. New binaryObjectId = [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "KinesisStream Sequence."
+                }
+              }
+            },
+            "RSC1102": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KinesisStream with Sequence# = [{}], taskId = [{}], binaryObjectId = [{}] failed to persist to binary object store.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to persist to binary object store."
+                }
+              }
+            },
+            "RSC1103": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KinesisStream with Sequence# = [{}], taskId = [{}] and binaryObjectId = [{}] is successfully persisted to binary object store.",
+                  "messageType": "INFO",
+                  "messageDesc": "Persisting to binary object store is successful."
+                }
+              }
+            },
+            "RSC1104": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Kinesis Stream connector for stream [%s] has received record with sequence number [%s] and binaryObjectId = [%s]",
+                  "messageType": "INFO",
+                  "messageDesc": "Kinesis Stream connector successfully received a record from Kinesis Stream."
+                }
+              }
+            },
+            "RSC1105": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KinesisStream with Sequence# = [{}], taskId = [{}] failed to create binaryObject. Request json is incorrect.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Request json is not a valid binary object request"
+                }
+              }
+            },
+            "RSC1106": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get mappings with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to get mappings with error:"
+                }
+              }
+            },
+            "RSC2000": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to update destination record, context mapping is does not contain field macros, context = {}.",
+                  "messageType": "WARNING",
+                  "messageDesc": "When setting values in the destination record, field macros are required to know where in the destination record to update."
+                }
+              }
+            },
+            "RSC2001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Outbound Channel data: {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Outbound Channel data"
+                }
+              }
+            },
+            "RSC2002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Using EC2 INSTANCE PROFILE Credentials",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Using EC2 INSTANCE PROFILE Credentials"
+                }
+              }
+            },
+            "RSC2003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Obtained AWS credentials successfully.",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Obtained AWS credentials successfully."
+                }
+              }
+            },
+            "RSC2004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RESPONSE from [{}] -> [{}] ",
+                  "messageType": "DEBUG",
+                  "messageDesc": "AWSCrendetialHelper -> getHttpGetContent"
+                }
+              }
+            },
+            "RSC2005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Http header [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Http header info"
+                }
+              }
+            },
+            "RSC2006": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error on get request [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error on get request"
+                }
+              }
+            },
+            "RSC2007": {
+              "locales": {
+                "en-US": {
+                  "messageText": "GetHttpGetContent body [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "GetHttpGetContent body"
+                }
+              }
+            },
+            "RSC2008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Amazon EC2 Credentials GET request - responce code {} - [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Amazon EC2 Credentials GET request - responce code."
+                }
+              }
+            },
+            "RSC2009": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Amazon EC2 Credentials GET request - responce code {} - [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Amazon EC2 Credentials GET request - responce code."
+                }
+              }
+            },
+            "RSC2010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KEY_ACCESS_KEY_ID {} - [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "KEY_ACCESS_KEY_ID"
+                }
+              }
+            },
+            "RSC2011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KEY_SECRET_ACCESS_KEY {} - with length [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "KEY_SECRET_ACCESS_KEY"
+                }
+              }
+            },
+            "RSC2012": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KEY_TOKEN {} - with length [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "KEY_TOKEN"
+                }
+              }
+            },
+            "RSC2013": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_TASK_MESSAGE"
+                }
+              }
+            },
+            "RSC2014": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, parentId = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_BATCH_MESSAGE"
+                }
+              }
+            },
+            "RSC2015": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event Started: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, parentId = {}, recordId = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_RECORD_MESSAGE_STARTED"
+                }
+              }
+            },
+            "RSC2016": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event Completed: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, parentId = {}, recordId = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_RECORD_MESSAGE_COMPLETED"
+                }
+              }
+            },
+            "RSC2017": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, parentId = {}, recordId = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_RECORD_MESSAGE"
+                }
+              }
+            },
+            "RSC2018": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Collect Topology raised exception.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Collect Topology raised exception."
+                }
+              }
+            },
+            "RSC2019": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Publish Topology raised exception.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Publish Topology raised exception."
+                }
+              }
+            },
+            "RSC2020": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transform Topology raised exception.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Transform Topology raised exception."
+                }
+              }
+            },
+            "RSC2021": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transformer: extractor = {}, transform = {}, loader = {}, messageBroker = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Transformer - Extractor, Transform, Loader, MessageBroker Info."
+                }
+              }
+            },
+            "RSC2022": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in transforming record [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error in transforming record "
+                }
+              }
+            },
+            "RSC2023": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entity model combined [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Entity model combined"
+                }
+              }
+            },
+            "RSC2024": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in creating an excel template file [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error in creating an excel template file"
+                }
+              }
+            },
+            "RSC2025": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Attempting to write record in a blank excel [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Attempting to write in a blank excel"
+                }
+              }
+            },
+            "RSC2026": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in getting context long name for context [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error in getting context long name for context"
+                }
+              }
+            },
+            "RSC2027": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in relationship data export for record id: [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error in relationship data export for record"
+                }
+              }
+            },
+            "RSC2028": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unexpected value in header of excel: [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Unexpected value in header of excel"
+                }
+              }
+            },
+            "RSC2029": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in smart excel write : [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error in smart excel write"
+                }
+              }
+            },
+            "RSC2030": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Record Transformer Config: [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Record Transformer Config"
+                }
+              }
+            },
+            "RSC2031": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Exception occurred in adding context attribute mapping: [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Exception occurred in adding context attribute mapping"
+                }
+              }
+            },
+            "RSC2032": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Exception occurred in adding relationship: [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Exception occurred in adding relationship"
+                }
+              }
+            },
+            "RSC2033": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RecordTransformer->setRecordValues warning: [{}]",
+                  "messageType": "WARN",
+                  "messageDesc": "RecordTransformer->setRecordValues warning"
+                }
+              }
+            },
+            "RSC2034": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Field value not found in source data, source field = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Field value not found in source data, source field"
+                }
+              }
+            },
+            "RSC2035": {
+              "locales": {
+                "en-US": {
+                  "messageText": "JsonRecordLoader add record to batch, current batch size = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "JsonRecordLoader add record to batch with current batch size"
+                }
+              }
+            },
+            "RSC2036": {
+              "locales": {
+                "en-US": {
+                  "messageText": "JsonRecordLoader send record batch, batch size = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "JsonRecordLoader send record batch with batch size "
+                }
+              }
+            },
+            "RSC2037": {
+              "locales": {
+                "en-US": {
+                  "messageText": "JsonRecordExtractor send record to transform, count in batch = [{}], recordId = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "JsonRecordExtractor send record to transform with index for recordId"
+                }
+              }
+            },
+            "RSC2038": {
+              "locales": {
+                "en-US": {
+                  "messageText": "JsonFlatRecordTransformer Config: {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "JsonFlatRecordTransformer Config"
+                }
+              }
+            },
+            "RSC2039": {
+              "locales": {
+                "en-US": {
+                  "messageText": "FieldMap Generator - Source metadata: {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "FieldMap Generator - Source metadata"
+                }
+              }
+            },
+            "RSC2040": {
+              "locales": {
+                "en-US": {
+                  "messageText": "FieldMap Generator - Destination metadata: {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "FieldMap Generator - Destination metadata"
+                }
+              }
+            },
+            "RSC2041": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ExcelRecordLoader add record to batch, current batch size = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "ExcelRecordLoader add record to batch with current batch size"
+                }
+              }
+            },
+            "RSC2042": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ExcelRecordLoader send record batch, batch size = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "ExcelRecordLoader send record batch with batch size "
+                }
+              }
+            },
+            "RSC2043": {
+              "locales": {
+                "en-US": {
+                  "messageText": "EntityOperationExtractor send record to transform, count in batch = [{}], recordId = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EntityOperationExtractor send record to transform"
+                }
+              }
+            },
+            "RSC2044": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Incoming data for transform is  = '{}'",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Incoming data for transform"
+                }
+              }
+            },
+            "RSC2045": {
+              "locales": {
+                "en-US": {
+                  "messageText": "DataModelExtractor raised an exception for taskId = [{}] fileName = [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "DataModelExtractor raised an exception"
+                }
+              }
+            },
+            "RSC2046": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis RESPONSE from [{}] -> [{}] ",
+                  "messageType": "DEBUG",
+                  "messageDesc": "RSKinesis RESPONSE"
+                }
+              }
+            },
+            "RSC2047": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis getHttpGetContent from [{}] succeeded.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSKinesis getHttpGetContent succeeded."
+                }
+              }
+            },
+            "RSC2048": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error on get request [{}], exception : [{}] ",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error on get request."
+                }
+              }
+            },
+            "RSC2049": {
+              "locales": {
+                "en-US": {
+                  "messageText": "[{}]-[{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "info."
+                }
+              }
+            },
+            "RSC2050": {
+              "locales": {
+                "en-US": {
+                  "messageText": "{} - with length [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Length."
+                }
+              }
+            },
+            "RSC2051": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: BEGIN [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "RSKinesis: BEGIN."
+                }
+              }
+            },
+            "RSC2052": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ERROR: --profile is required for any action.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Profile is required for any action."
+                }
+              }
+            },
+            "RSC2053": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ERROR: --action is required parameter.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Action is required parameter."
+                }
+              }
+            },
+            "RSC2054": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ERROR: --stream is required for action:  [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Stream is required for action."
+                }
+              }
+            },
+            "RSC2055": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Target stream: [{}] Application name: [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Application name."
+                }
+              }
+            },
+            "RSC2056": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: END [{}] took seconds: [{}]",
+                  "messageType": "WARNING",
+                  "messageDesc": "RSKinesis: END."
+                }
+              }
+            },
+            "RSC2057": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:readStream [{}]",
+                  "messageType": "WARNING",
+                  "messageDesc": "RSKinesis:readStream."
+                }
+              }
+            },
+            "RSC2058": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:readStream Kinesis client lib= [{}]",
+                  "messageType": "WARNING",
+                  "messageDesc": "RSKinesis:readStream Kinesis client."
+                }
+              }
+            },
+            "RSC2059": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:readStream - Running [{}] to process stream [{}] as worker [{}]...",
+                  "messageType": "WARNING",
+                  "messageDesc": "RSKinesis:readStream - Running."
+                }
+              }
+            },
+            "RSC2060": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:readStream Worker run() finished.",
+                  "messageType": "WARNING",
+                  "messageDesc": "RSKinesis:readStream - finishe."
+                }
+              }
+            },
+            "RSC2061": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:readStream  Caught throwable while processing data.",
+                  "messageType": "ERROR",
+                  "messageDesc": "RSKinesis:readStream  Caught throwable while processing data."
+                }
+              }
+            },
+            "RSC2062": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:readStream readStream() finished.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSKinesis:readStream readStream() finished."
+                }
+              }
+            },
+            "RSC2063": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Writing to the Amazon Kinesis stream used by the sample. Stream Name = {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Writing to the Amazon Kinesis stream used by the sample. Stream Name"
+                }
+              }
+            },
+            "RSC2064": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Stream {} has a status of {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "RSKinesis stream status"
+                }
+              }
+            },
+            "RSC2065": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Stream is being deleted. This sample will now exit.",
+                  "messageType": "INFO",
+                  "messageDesc": "Stream is being deleted. This sample will now exit."
+                }
+              }
+            },
+            "RSC2066": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Stream {} does not exist. Creating it now.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Stream does not exist. Creating it now"
+                }
+              }
+            },
+            "RSC2067": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Putting records in stream : {} until this application is stopped or max ({}) records(if > 0).",
+                  "messageType": "INFO",
+                  "messageDesc": "Putting records in stream"
+                }
+              }
+            },
+            "RSC2068": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Press CTRL-C to stop.",
+                  "messageType": "INFO",
+                  "messageDesc": "Press CTRL-C to stop."
+                }
+              }
+            },
+            "RSC2069": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Can't get anymore files. Exiting write loop.",
+                  "messageType": "INFO",
+                  "messageDesc": "Can't get anymore files. Exiting write loop."
+                }
+              }
+            },
+            "RSC2070": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis:writeStream Successfully put record [%05d/%05d]: {}, {}, ShardID : {}, SequenceNumber : {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Successfully put record."
+                }
+              }
+            },
+            "RSC2071": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: The file connector found a folder, expected only files, folder = '{}'.",
+                  "messageType": "WARNING",
+                  "messageDesc": "The file connector found a folder, expected only files."
+                }
+              }
+            },
+            "RSC2072": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: getNextFileFromFolder: RecordCount is out of bounds: {}. Has to be less than {}",
+                  "messageType": "WARNING",
+                  "messageDesc": "RecordCount is out of bounds"
+                }
+              }
+            },
+            "RSC2073": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: Deleting the Amazon Kinesis stream used by the sample. Stream Name = {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Deleting the Amazon Kinesis stream used by the sample."
+                }
+              }
+            },
+            "RSC2074": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Caught throwable while deleting stream.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Caught throwable while deleting stream."
+                }
+              }
+            },
+            "RSC2075": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: Deleting the Amazon DynamoDB table used by the Amazon Kinesis Client Library. Table Name = {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Deleting the Amazon DynamoDB table used by the Amazon Kinesis Client Library."
+                }
+              }
+            },
+            "RSC2076": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Caught throwable while deleting table.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Caught throwable while deleting table."
+                }
+              }
+            },
+            "RSC2077": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: Creating the Amazon Kinesis stream used by the sample. Stream Name = {}.",
+                  "messageType": "INFO",
+                  "messageDesc": "Creating the Amazon Kinesis stream used by the sample."
+                }
+              }
+            },
+            "RSC2078": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: List of your stream:",
+                  "messageType": "INFO",
+                  "messageDesc": "List of your streams."
+                }
+              }
+            },
+            "RSC2079": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: \t- [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Stream name"
+                }
+              }
+            },
+            "RSC2080": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Waiting for {} to become ACTIVE...",
+                  "messageType": "INFO",
+                  "messageDesc": "Waiting to become ACTIVE..."
+                }
+              }
+            },
+            "RSC2081": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: current state: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Current state"
+                }
+              }
+            },
+            "RSC2082": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesis: Resource not found: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Resource not found."
+                }
+              }
+            },
+            "RSC2083": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Using EC2 INSTANCE PROFILE Credentials",
+                  "messageType": "INFO",
+                  "messageDesc": "Using EC2 INSTANCE PROFILE Credentials"
+                }
+              }
+            },
+            "RSC2084": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Using IAM Roles on EC2 with account: [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Using IAM Roles on EC2 with account"
+                }
+              }
+            },
+            "RSC2085": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Using credentials from profile file [{}] with profile account: [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Using credentials from profile file"
+                }
+              }
+            },
+            "RSC2086": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Initializing record processor for shard: [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Initializing record processor for shard"
+                }
+              }
+            },
+            "RSC2087": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Processing {} records from {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Processing records"
+                }
+              }
+            },
+            "RSC2088": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: REQUESTING Shutting down record processor for shared: {}",
+                  "messageType": "WARNING",
+                  "messageDesc": "REQUESTING Shutting down record processor for shared"
+                }
+              }
+            },
+            "RSC2089": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Caught throwable while deleting table.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Caught throwable while deleting table."
+                }
+              }
+            },
+            "RSC2090": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Couldn't process record {} . Skipping the record.",
+                  "messageType": "INFO",
+                  "messageDesc": "Couldn't process record. Skipping the record."
+                }
+              }
+            },
+            "RSC2091": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Received [%05d/%05d]: SeqNum [{}], Record: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "RSKinesisRecordProcessor: Received"
+                }
+              }
+            },
+            "RSC2092": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Persisted to: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Persisted to"
+                }
+              }
+            },
+            "RSC2093": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Error writing persisting record to folder: ",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error writing persisting record to folder:"
+                }
+              }
+            },
+            "RSC2094": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Record does not match sample record format.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Record does not match sample record format."
+                }
+              }
+            },
+            "RSC2095": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Malformed data:",
+                  "messageType": "ERROR",
+                  "messageDesc": "Malformed data."
+                }
+              }
+            },
+            "RSC2096": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Checkpointing shared [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Checkpointing shared."
+                }
+              }
+            },
+            "RSC2097": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Caught shutdown exception",
+                  "messageType": "ERROR",
+                  "messageDesc": "Caught shutdown exception."
+                }
+              }
+            },
+            "RSC2098": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Checkpoint failed",
+                  "messageType": "ERROR",
+                  "messageDesc": "Checkpoint failed."
+                }
+              }
+            },
+            "RSC2099": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Transient issue when checkpointing",
+                  "messageType": "ERROR",
+                  "messageDesc": "Transient issue when checkpointing."
+                }
+              }
+            },
+            "RSC2100": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Cannot save checkpoint to the DynamoDB table used by the Amazon Kinesis Client Library.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Cannot save checkpoint to the DynamoDB table used by the Amazon Kinesis Client Library."
+                }
+              }
+            },
+            "RSC2101": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Interrupted sleep.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Interrupted sleep."
+                }
+              }
+            },
+            "RSC2102": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RSKinesisRecordProcessor: Shutting down record processor for shard: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Shutting down record processor for shard."
+                }
+              }
+            },
+            "RSC2103": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Expected hadoop node count is only 1. taking the first node for HDFS.",
+                  "messageType": "INFO",
+                  "messageDesc": "Expected hadoop node count is only 1. taking the first node for HDFS."
+                }
+              }
+            },
+            "RSC2104": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get appconfig boolean value, field = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to get appconfig boolean value, field."
+                }
+              }
+            },
+            "RSC2105": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get appconfig integer value, field = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to get appconfig integer value, field."
+                }
+              }
+            },
+            "RSC2106": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: Invalid parameters.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Invalid parameters."
+                }
+              }
+            },
+            "RSC2107": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: Source entity missing.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Source entity missing."
+                }
+              }
+            },
+            "RSC2108": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: No related entities found.",
+                  "messageType": "ERROR",
+                  "messageDesc": "related entities found."
+                }
+              }
+            },
+            "RSC2109": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: No related entity type and attributes mappings found.",
+                  "messageType": "INFO",
+                  "messageDesc": "No related entity type and attributes mappings found."
+                }
+              }
+            },
+            "RSC2110": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: No attributes found for any related entities.",
+                  "messageType": "INFO",
+                  "messageDesc": " No attributes found for any related entities."
+                }
+              }
+            },
+            "RSC2111": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: Could not create search query for related entities.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Could not create search query for related entities."
+                }
+              }
+            },
+            "RSC2112": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: serviceURL [{}] searchQuery - {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Related_Entity."
+                }
+              }
+            },
+            "RSC2113": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: Received Response - {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Received Response."
+                }
+              }
+            },
+            "RSC2114": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: [{}] - [{}]: Updating related entity attributes.",
+                  "messageType": "INFO",
+                  "messageDesc": "Updating related entity attributes."
+                }
+              }
+            },
+            "RSC2115": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: updateRelatedEntityAttributes: entity",
+                  "messageType": "INFO",
+                  "messageDesc": "Related_Entity: updateRelatedEntityAttributes: entity"
+                }
+              }
+            },
+            "RSC2116": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity: updateRelatedEntityAttributes: dataObject",
+                  "messageType": "INFO",
+                  "messageDesc": "Related_Entity: updateRelatedEntityAttributes: dataObject"
+                }
+              }
+            },
+            "RSC2117": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity_Update: [{}] - [{}]:",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Related_Entity_Update"
+                }
+              }
+            },
+            "RSC2118": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity_Update: [{}] - [{}]: Adding data: {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Related_Entity_Update: Adding data"
+                }
+              }
+            },
+            "RSC2119": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Related_Entity_Update: [{}] - [{}]: Related entity not found.",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Related entity not found."
+                }
+              }
+            },
+            "RSC2120": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Response: status = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Related entity not found."
+                }
+              }
+            },
+            "RSC2121": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entity Manage model: {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Entity Manage model."
+                }
+              }
+            },
+            "RSC2122": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entity Validation model {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Entity Validation model"
+                }
+              }
+            },
+            "RSC2123": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Validation attributes object {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Validation attributes object"
+                }
+              }
+            },
+            "RSC2124": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event service failed",
+                  "messageType": "ERROR",
+                  "messageDesc": "Event service failed"
+                }
+              }
+            },
+            "RSC2125": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Match service failed",
+                  "messageType": "ERROR",
+                  "messageDesc": "Match service failed"
+                }
+              }
+            },
+            "RSC2126": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Interrupted exception thrown for file open retry",
+                  "messageType": "ERROR",
+                  "messageDesc": "Interrupted exception thrown for file open retry"
+                }
+              }
+            },
+            "RSC2127": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HDFS filesystem = {}, path = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "HDFS filesystem."
+                }
+              }
+            },
+            "RSC2128": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HDFS open read: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "HDFS  open read."
+                }
+              }
+            },
+            "RSC2129": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HDFS open write: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "HDFS open write."
+                }
+              }
+            },
+            "RSC2130": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HDFS delete: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "HDFS delete."
+                }
+              }
+            },
+            "RSC2131": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HDFS close: filesystem = {}, path = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "HDFS close."
+                }
+              }
+            },
+            "RSC2132": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HDFS close read: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "HDFS close read."
+                }
+              }
+            },
+            "RSC2133": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HDFS close write: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "HDFS close write."
+                }
+              }
+            },
+            "RSC2134": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unable to close uri - {}  with exception {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Unable to close uri."
+                }
+              }
+            },
+            "RSC2135": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KafkaMessageBroker topic = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "KafkaMessageBroker topic."
+                }
+              }
+            },
+            "RSC2140": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in reference data: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error in reference data."
+                }
+              }
+            },
+            "RSC2141": {
+              "locales": {
+                "en-US": {
+                  "messageText": "File is invalid",
+                  "messageType": "ERROR",
+                  "messageDesc": "File is invalid."
+                }
+              }
+            },
+            "RSC2142": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entity model json: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Entity model json."
+                }
+              }
+            },
+            "RSC2143": {
+              "locales": {
+                "en-US": {
+                  "messageText": "App error",
+                  "messageType": "ERROR",
+                  "messageDesc": "App error"
+                }
+              }
+            },
+            "RSC2144": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Invalid args received: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Invalid args received."
+                }
+              }
+            },
+            "RSC2145": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Press any key and enter to exit",
+                  "messageType": "INFO",
+                  "messageDesc": "Press any key and enter to exit"
+                }
+              }
+            },
+            "RSC2146": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Shutting down...",
+                  "messageType": "INFO",
+                  "messageDesc": "Shutting down"
+                }
+              }
+            },
+            "RSC2147": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to process: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to process"
+                }
+              }
+            },
+            "RSC2148": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to parse assetUri = {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed to parse assetUri"
+                }
+              }
+            },
+            "RSC2149": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The service call took longer time = [{}] for service {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Service call performance tag"
+                }
+              }
+            },
+            "RSC2150": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Building spout for topic={}, zkhosts={}, groupId={}",
+                  "messageType": "INFO",
+                  "messageDesc": "Building spout."
+                }
+              }
+            },
+            "RSC2151": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Remove field from source metadata not included in the search, field = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Remove field from source metadata not included in the search."
+                }
+              }
+            },
+            "RSC2152": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get {} model, {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Query model is optional."
+                }
+              }
+            },
+            "RSC2153": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The request to create binary object is empty for uri {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Binary Object create"
+                }
+              }
+            },
+            "RSC2154": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The response to get binary object is empty",
+                  "messageType": "ERROR",
+                  "messageDesc": "Binary Object get"
+                }
+              }
+            },
+            "RSC2155": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The data object in binary object get is empty",
+                  "messageType": "ERROR",
+                  "messageDesc": "Binary Object get"
+                }
+              }
+            },
+            "RSC2160": {
+              "locales": {
+                "en-US": {
+                  "messageText": "record loader is shutting down, but commit was not executed to ensure all records sent, perhaps exception is thrown, taskid = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "The record loader is shutting down, but commit was not executed to ensure all records are sent."
+                }
+              }
+            },
+            "RSC2161": {
+              "locales": {
+                "en-US": {
+                  "messageText": "downloadDataJob error.",
+                  "messageType": "INFO",
+                  "messageDesc": "downloadDataJob error."
+                }
+              }
+            },
+            "RSC2162": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Download data job has been initiated with work automation id : %s.",
+                  "messageType": "INFO",
+                  "messageDesc": "Download data job has been initiated with work automation id."
+                }
+              }
+            },
+            "RSC2165": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Download data job has completed.",
+                  "messageType": "INFO",
+                  "messageDesc": "Download data job has completed."
+                }
+              }
+            },
+            "RSC2166": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to send download data job notification. {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Download data job has completed, but encountered an error."
+                }
+              }
+            },
+            "RSC2167": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Download data job has started",
+                  "messageType": "ERROR",
+                  "messageDesc": "Download data job has started."
+                }
+              }
+            },
+            "RSC2168": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in adding a file name for the connector - {}",
+                  "messageType": "Error",
+                  "messageDesc": "Error in adding a file for the connector."
+                }
+              }
+            },
+            "RSC2169": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Kinesis Stream connector for stream [%s] has started",
+                  "messageType": "INFO",
+                  "messageDesc": "Kinesis Stream connector started."
+                }
+              }
+            },
+            "RSC2170": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Excel row number ({}) does not contain entity id ({}), used to locate associated relationships",
+                  "messageType": "WARN",
+                  "messageDesc": "The entity id field on the entity sheet is used to identify relationships defined on the relationships sheet."
+                }
+              }
+            },
+            "RSC2171": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Relationship row number ({}) has no value for the 'from' entity id ({}), used to locate associated relationships",
+                  "messageType": "WARN",
+                  "messageDesc": "The from-entity id field on the relationships sheet must have a value, this field is used to identify relationships defined on the relationships sheet."
+                }
+              }
+            },
+            "RSC2172": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entities sheet not found (%s), invalid excel document",
+                  "messageType": "WARN",
+                  "messageDesc": "Failed to find the Entities sheet in the excel document. This sheet contains the entities to import and is required."
+                }
+              }
+            },
+            "RSC2180": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed service call, request timeout %s times, connection timeout = %dms. %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Fail service call after connection timeout."
+                }
+              }
+            },
+            "RSC2181": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Retrying service call, request timeout count ({} of {}), connection timeout = {}ms",
+                  "messageType": "WARN",
+                  "messageDesc": "Retry service call after connection timeout."
+                }
+              }
+            },
+            "RSC2182": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event Started: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, parentId = {}, recordId = {}, rowNum = {}, eventType = {}, subEventType = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_RECORD_MESSAGE_STARTED"
+                }
+              }
+            },
+            "RSC2183": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event Completed: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, parentId = {}, recordId = {}, rowNum = {}, eventType = {}, subEventType = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_RECORD_MESSAGE_COMPLETED"
+                }
+              }
+            },
+            "RSC2184": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event: ProfileType = {}, ProfileName = {}, TenantId = {}, taskId = {}, parentId = {}, recordId = {}, rowNum = {}, eventType = {}, subEventType = {}, message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "EVENT_RECORD_MESSAGE"
+                }
+              }
+            },
+            "RSC2185": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Date Conversion failed for date = {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed Date Conversion"
+                }
+              }
+            },
+            "RSC2186": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error occurred in setting record values",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error occurred in setting record values"
+                }
+              }
+            },
+            "RSC2187": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Date Conversion failed for date = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Failed Date Conversion"
+                }
+              }
+            },
+            "RSC2188": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error occurred in setting record values with exception = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Error occurred in setting record values"
+                }
+              }
+            },
+            "RSC2189": {
+              "locales": {
+                "en-US": {
+                  "messageText": "FieldMap Generator - Relationship metadata: {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "FieldMap Generator - Relationship metadata"
+                }
+              }
+            },
+            "RSC2190": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unable to find optional sheet, name = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Optional sheet was not found."
+                }
+              }
+            },
+            "RSC2191": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unable to find relationship name, relationship name = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Relationship name was not found on the Relationships sheet."
+                }
+              }
+            },
+            "RSC2192": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Relto attribute was not mapped, unable to find relationship name = {}, for attribute = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Relto attribute was not mapped, because relationship name was not found in metadata."
+                }
+              }
+            },
+            "RSC2193": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Relto attribute was not mapped, unable to find to-entity type = {}, for attribute = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Relto attribute was not mapped, because to-entity type was not found in metadata."
+                }
+              }
+            },
+            "RSC2194": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Relto field mapping failed, unable to find attribute = {} in metdata for relationship name = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Relto attribute was not mapped, because attribute was not found in metdata for relationship."
+                }
+              }
+            },
+            "RSC2195": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Relto field mapping failed, unable to find metadata for entity type = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Relto attribute was not mapped, because unable to find metadata for entity type."
+                }
+              }
+            },
+            "RSC2196": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Relto field mapping failed, unable to find metadata for entity type = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Relto attribute was not mapped, because unable to find metadata for entity type."
+                }
+              }
+            },
+            "RSC2200": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Invalid profile, bulk load profile type is not supported in the publish topology",
+                  "messageType": "ERROR",
+                  "messageDesc": "Bulk load profile type is not supported in the publish topology. Bulk load profiles should be handled by the collect topology."
+                }
+              }
+            },
+            "RSC2201": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Bulk load source cannot be null, connector = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Bulk load data source should not return null."
+                }
+              }
+            },
+            "RSC2202": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Invalid url = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Invalid url ."
+                }
+              }
+            },
+            "RSC2203": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Publish message to kafka, queue = {}, taskId = {}, parentId = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "RSConnect message is published to kafka."
+                }
+              }
+            },
+            "RSC2204": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ExcelRecordExtractor send record to transform, count in batch = [{}], recordId = [{}]",
+                  "messageType": "DEBUG",
+                  "messageDesc": "ExcelRecordExtractor send record to transform with index for recordId"
+                }
+              }
+            },
+            "RSC2210": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to send task summarization to request tracking service, taskId = {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "When fail to send task summarization to request tracking service, the UI may show tasks that never complete."
+                }
+              }
+            },
+            "RSC2211": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transform failed, taskId = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "When fail to send task summarization to request tracking service, to inform UI of task failure."
+                }
+              }
+            },
+            "RSC2212": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Collect failed, taskId = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "When fail to send task summarization to request tracking service, to inform UI of task failure."
+                }
+              }
+            },
+            "RSC2213": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Publish failed, taskId = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "When fail to send task summarization to request tracking service, to inform UI of task failure."
+                }
+              }
+            },
+            "RSC2214": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Task failed, taskId = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "When fail to send task summarization to request tracking service, to inform UI of task failure."
+                }
+              }
+            },
+            "RSC2216": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No self context attributes found in source json",
+                  "messageType": "INFO",
+                  "messageDesc": "No params"
+                }
+              }
+            },
+            "RSC2217": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Unable to find relationship type, relationshipname = {}",
+                  "messageType": "WARNING",
+                  "messageDesc": "Relationship type was not found or invalid."
+                }
+              }
+            },
+            "RSC2220": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Model cache hit, key = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Report whether found item in model cache."
+                }
+              }
+            },
+            "RSC2221": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Model cache miss, key = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Report whether found item in model cache."
+                }
+              }
+            },
+            "RSC2222": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Reference data cache hit, key = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Report whether found item in Reference data cache."
+                }
+              }
+            },
+            "RSC2223": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Reference data cache miss, key = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Report whether found item in Reference data cache."
+                }
+              }
+            },
+            "RSC2224": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Model cache load, {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Model cache load."
+                }
+              }
+            },
+            "RSC2225": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Model cache save, {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Model cache save."
+                }
+              }
+            },
+            "RSC2226": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Reference data cache load, {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Reference data cache load."
+                }
+              }
+            },
+            "RSC2227": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Reference data cache save, {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Reference data cache save."
+                }
+              }
+            },
+            "RSC2228": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Profile cache hit, key = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Report whether found item in Profile cache."
+                }
+              }
+            },
+            "RSC2229": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Profile cache miss, key = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Report whether found item in Profile cache."
+                }
+              }
+            },
+            "RSC2230": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No entities found",
+                  "messageType": "INFO",
+                  "messageDesc": "No entities found."
+                }
+              }
+            },
+            "RSC2231": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Invalid entity, entity id not found",
+                  "messageType": "ERROR",
+                  "messageDesc": "Entity id not found."
+                }
+              }
+            },
+            "RSC2232": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Event flag not raised - details not sent to RDF - logging the event details - {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Event flag not raised - details not sent to RDF - logging the event details."
+                }
+              }
+            },
+            "RSC2250": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Search without specific entity id's or search criterion will have poor performance, search = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Search without specific entity id's or search criterion will have poor performance."
+                }
+              }
+            },
+            "RSC2260": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to mark validation error, row = {}, cell = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "When fail to mark cell with validation error."
+                }
+              }
+            },
+            "RSC2261": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Source field is not found attribute model, source = {}",
+                  "messageType": "WARNING",
+                  "messageDesc": "Source field is not found attribute model."
+                }
+              }
+            },
+            "RSC2262": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Task failed, entityId = {}: {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Creation of genereric object for delete retry failed"
+                }
+              }
+            },
+            "RSC4000": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Profile repair starting, input = {}, output = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Profile repair tool is starting."
+                }
+              }
+            },
+            "RSC4001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Profile repair complete, output = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Profile repair tool is complete."
+                }
+              }
+            },
+            "RSC4002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Profile repair is complete, no field override found.",
+                  "messageType": "WARN",
+                  "messageDesc": "Profile repair tool is complete with no work to do."
+                }
+              }
+            },
+            "RSC4003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to repair profile, no output file was generated.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Profile repair tool is complete with errors, no output file was generated."
+                }
+              }
+            },
+            "RSC4004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "{}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Profile repair tool was invoked with invalid parameters, no output file was generated."
+                }
+              }
+            },
+            "RSC4005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Profile repair tool was found a duplicate field override, excluding override = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Profile repair tool was found a duplicate field override, excluding this override. First override encountered is included."
+                }
+              }
+            },
+            "RSC4006": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Entities or default Sheet1 sheet not found (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Expected sheets in per default Excel import profile are not found. Alternate profiles may be needed to preprocess."
+                }
+              }
+            },
+            "RSC4007": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The incoming file is a multisheet APlus file. Transforming file to simplified APlus file.",
+                  "messageType": "WARN",
+                  "messageDesc": "The incoming file is a multisheet APlus file. Transforming file to simplified APlus file.."
+                }
+              }
+            },
+            "RSC4008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transformation of multisheet APlus file to simplified APlus file completed.",
+                  "messageType": "WARN",
+                  "messageDesc": "Transformation of multisheet APlus file to simplified APlus file completed.."
+                }
+              }
+            },
+            "RSC4009": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Transforming simplified Aplus sheet for import.",
+                  "messageType": "WARN",
+                  "messageDesc": "Transforming simplified Aplus sheet for import."
+                }
+              }
+            },
+            "RSC4010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The simplified APlus sheet is transformed successfully.",
+                  "messageType": "WARN",
+                  "messageDesc": "The simplified APlus sheet is transformed successfully."
+                }
+              }
+            },
+            "RSC5000": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get the profile with profile type: %s with context: %s",
+                  "messageType": "WARN",
+                  "messageDesc": "Failed to get the profile with profile type"
+                }
+              }
+            },
+            "RSC5001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Failed to get the overrides for type: %s",
+                  "messageType": "WARN",
+                  "messageDesc": "Failed to get the overrides"
+                }
+              }
+            },
+            "RSC5002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "No Records found for the context: %s",
+                  "messageType": "WARN",
+                  "messageDesc": "Failed to get the overrides"
+                }
+              }
+            },
+            "RSC5003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "multiple records found for context: %s",
+                  "messageType": "WARN",
+                  "messageDesc": "Failed to get the overrides"
+                }
+              }
+            },
+            "RSC6000": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: Column 'NAME' (%s) is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: Column 'DATA TYPE' (%s) is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: Column 'DISPLAY NAME' (%s) is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: Wrong value '%s' in MINIMUM LENGTH column (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: Wrong value '%s' in MAXIMUM LENGTH column (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: MINIMUM LENGTH value %s (%s) is greater than MAXIMUM LENGTH value %s (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6006": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: RANGE FROM value %s (%s) is greater than RANGE TO value %s (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6007": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: Wrong value '%s' in cell %s",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ATTRIBUTES: Wrong NAME '%s' (%s). Another attribute with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: NAME column (%s) is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: RELATIONSHIP TYPE column (%s) is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6012": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: FROM column (%s) is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6013": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: Entity FROM '%s' (%s) isn't found in ENTITIES tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6014": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: TO column (%s) is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6015": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: Entity TO '%s' (%s) isn't found in ENTITIES tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6016": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: Wrong value '%s' in MIN OCCURANCE column (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6017": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: Wrong value '%s' in MAX OCCURANCE column (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6018": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: MIN OCCURANCE value '%s' (%s) is greater than MAX OCCURANCE value '%s' (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6019": {
+              "locales": {
+                "en-US": {
+                  "messageText": "RELATIONSHIPS: Wrong NAME '%s' (%s). Another relationship with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6020": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: Both '%s' (%s) and '%s' (%s) columns are empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6021": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: Both '%s' (%s) and '%s' (%s) are not empty. Only one of them must be!",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6022": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s:  '%s' (%s) wasn't found in 'ENTITIES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6023": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: Relationship '%s' (%s) wasn't found in 'RELATIONSHIPS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6024": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: MAPPED ATTRIBUTE %s (%s) wasn't found in 'ATTRIBUTES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6025": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: MAPPED RELATIONSHIP %s (%s) wasn't found in 'RELATIONSHIPS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6026": {
+              "locales": {
+                "en-US": {
+                  "messageText": "E-A-R-C MODEL: FOR CONTEXT TYPE %s (%s) wasn't found in 'CONTEXT TYPE' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6027": {
+              "locales": {
+                "en-US": {
+                  "messageText": "E-A-R-C MODEL: FOR CONTEXT GROUP %s (%s) wasn't found in 'CONTEXTS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6028": {
+              "locales": {
+                "en-US": {
+                  "messageText": "E-A-R-C MODEL: FOR CONTEXT NAME %s (%s) wasn't found in 'CONTEXTS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6029": {
+              "locales": {
+                "en-US": {
+                  "messageText": "E-A-R-C MODEL: MATCH SET %s (%s) should be integer",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6030": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: 'ENTITY' %s column is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6031": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: 'CONTEXT GROUP' %s column is empty or not integer",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6032": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: CONTEXT %s (%s) wasn't found in 'CONTEXTS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6033": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: 'CONTEXT TYPE' %s column is empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6034": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: CONTEXT TYPE %s (%s) wasn't found in 'CONTEXT TYPES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6035": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: 'CONTEXT SEQUENCE' %s column is empty or not integer",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6037": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: 'MAPPED VALUE CONTEXT' %s and 'MAPPED VALUE CONTEXT RELATIONSHIP' %s should be both empty or not empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6038": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ENTITY CONTEXT MODEL: Wrong values in MIN OCCURANCE %s and MAX OCCURANCE %s columns",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6050": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXTS: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6051": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXTS: Wrong NAME '%s' (%s). Another context with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6052": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXTS: TYPE is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6053": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXTS: CONTEXT TYPE %s (%s) wasn't found in 'CONTEXT TYPES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6060": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXT MODEL: Columns 'CONTEXT' (%s), 'CONTEXT TYPE' (%s) and 'CONTEXT GROUP' (%s) are empty",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6061": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXT MODEL:  Context '%s' (%s) wasnt' found in 'CONTEXTS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6062": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXT MODEL:  Context Type '%s' (%s) wasnt' found in 'CONTEXT TYPES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6063": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXT MODEL:  Context Group'%s' (%s) wasnt' found in 'CONTEXTS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6064": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXT MODEL: MAPPED ATTRIBUTE %s (%s) wasn't found in 'ATTRIBUTES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6065": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTEXT MODEL: MAPPED RELATIONSHIP %s (%s) wasn't found in 'RELATIONSHIPS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6070": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6071": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: Wrong NAME '%s' (%s). Another entity with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6072": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ACTIVITY ACTIONS: ACTION NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6073": {
+              "locales": {
+                "en-US": {
+                  "messageText": "ACTIVITY ACTIONS: Wrong ACTION NAME '%s' (%s). Another entity with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6074": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: WORKFLOW NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6075": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: WORKFLOW NAME %s (%s) wasn't found in 'WORKFLOWS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6076": {
+              "locales": {
+                "en-US": {
+                  "messageText": "WORKFLOW ACTIVITY DEFINITION: ACTIVITY NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6077": {
+              "locales": {
+                "en-US": {
+                  "messageText": "WORKFLOW ACTIVITY DEFINITION: Wrong value '%s' in ACTIVITY SEQUENCE column (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6078": {
+              "locales": {
+                "en-US": {
+                  "messageText": "WORKFLOW ACTIVITY DEFINITION: ACTIVITY ACTIONS is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6079": {
+              "locales": {
+                "en-US": {
+                  "messageText": "WORKFLOW ACTIVITY DEFINITION: ACTIVITY ACTIONS %s (%s) wasn't found in 'ACTIVITY ACTIONS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6080": {
+              "locales": {
+                "en-US": {
+                  "messageText": "BUSINESS RULES: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6081": {
+              "locales": {
+                "en-US": {
+                  "messageText": "BUSINESS RULES: Wrong NAME '%s' (%s). Another rule with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6082": {
+              "locales": {
+                "en-US": {
+                  "messageText": "BUSINESS CONDITIONS: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6083": {
+              "locales": {
+                "en-US": {
+                  "messageText": "BUSINESS CONDITIONS: Wrong NAME '%s' (%s). Another condition with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6084": {
+              "locales": {
+                "en-US": {
+                  "messageText": "BUSINESS CONDITIONS: MAPPED BUSINESS RULE(s) %s (%s) wasn't found in 'BUSINESS RULES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6085": {
+              "locales": {
+                "en-US": {
+                  "messageText": "GOVERNANCE MAPPING: ENTITY is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6086": {
+              "locales": {
+                "en-US": {
+                  "messageText": "GOVERNANCE MAPPING: MAPPED BUSINESS RULE %s (%s) wasn't found in 'BUSINESS RULES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6087": {
+              "locales": {
+                "en-US": {
+                  "messageText": "GOVERNANCE MAPPING: MAPPED BUSINESS CONDITION %s (%s) wasn't found in 'BUSINESS CONDITIONS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6088": {
+              "locales": {
+                "en-US": {
+                  "messageText": "GOVERNANCE MAPPING: FOR CONTEXT %s (%s) wasn't found in 'CONTEXTS' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6089": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTENT CONFIG: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6090": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTENT CONFIG: Wrong NAME '%s' (%s). Another config with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6091": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CONTENT MODEL: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6100": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Record size is morethan 1 MB. So record is ignored to publish, record id is = {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Record size is morethan 1 MB. So record is ignored to publish"
+                }
+              }
+            },
+            "RSC6101": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: ROLE is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6102": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: Wrong ROLE '%s' (%s). Another role with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6103": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: LOGIN is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6104": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: Wrong LOGIN '%s' (%s). Another user with such login is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6105": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: There's no ROLE '%s' (%s). ",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6106": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: There's no USER '%s' (%s). ",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6107": {
+              "locales": {
+                "en-US": {
+                  "messageText": "%s: Unknown %s '%s' (%s). ",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6200": {
+              "locales": {
+                "en-US": {
+                  "messageText": "TAXONOMIES: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6201": {
+              "locales": {
+                "en-US": {
+                  "messageText": "TAXONOMIES: Wrong NAME '%s' (%s). Another taxonomy with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6210": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CATEGORIES: NAME is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6211": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CATEGORIES: Wrong NAME '%s' (%s). Another category with such name is already defined",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6212": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CATEGORIES: TYPE is empty (%s)",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6213": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CATEGORIES: PARENT CATEGORY %s (%s) wasn't found in 'CATEGORIES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6214": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CATEGORIES: TAXONOMY %s (%s) wasn't found in 'TAXONOMIES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6220": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CATEGORY MODEL: TAXONOMY %s (%s) wasn't found in 'TAXONOMIES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6221": {
+              "locales": {
+                "en-US": {
+                  "messageText": "CATEGORY MODEL: CATEGORY %s (%s) wasn't found in 'CATEGORIES' tab",
+                  "messageType": "WARN",
+                  "messageDesc": "Error on Excel sheet"
+                }
+              }
+            },
+            "RSC6222": {
+              "locales": {
+                "en-US": {
+                  "messageText": "UrlConnector initiated: url = {} and message = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "UrlConnector initiated"
+                }
+              }
+            },
+            "RSC6223": {
+              "locales": {
+                "en-US": {
+                  "messageText": "UrlConnector returned response = {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "UrlConnector initiated"
+                }
+              }
+            },
+            "RSC6224": {
+              "locales": {
+                "en-US": {
+                  "messageText": "HMAC calculation has thrown an exception for key = { } with exception = {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "HMAC calculation failed"
+                }
+              }
+            },
+            "RSC6225": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The connector publish message is sent to EndPoint successfully.",
+                  "messageType": "INFO",
+                  "messageDesc": "The connector publish message is sent to EndPoint successfully."
+                }
+              }
+            },
+            "RSC6226": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The connector published message is received successfully by EndPoint.",
+                  "messageType": "INFO",
+                  "messageDesc": "The connector published message is received successfully by EndPoint."
+                }
+              }
+            },
+            "RSC6227": {
+              "locales": {
+                "en-US": {
+                  "messageText": "URL connector successfully published message to flowtask = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "URL connector successfully published message to flowtask"
+                }
+              }
+            },
+            "RSC6228": {
+              "locales": {
+                "en-US": {
+                  "messageText": "URL connector failed to push the message to flowtask = {}",
+                  "messageType": "INFO",
+                  "messageDesc": "URL connector pushed the message to flowtask"
+                }
+              }
+            },
+            "RSC6229": {
+              "locales": {
+                "en-US": {
+                  "messageText": "The connector publish failed with error: %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "The connector publish failed with error:"
+                }
+              }
+            },
+            "RSC6230": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Connector publish operation raised exception.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Connector publish operation raised exception."
+                }
+              }
+            },
+            "RSC6231": {
+              "locales": {
+                "en-US": {
+                  "messageText": "SFTP connector failed to write data to SFTP Server = {}@{}:{}",
+                  "messageType": "ERROR",
+                  "messageDesc": "SFTP connector failed to write data to SFTP Server"
+                }
+              }
+            },
+            "RSC6232": {
+              "locales": {
+                "en-US": {
+                  "messageText": "SFTP connector could not connect or write data to SFTP Server = {}@{}:{}",
+                  "messageType": "ERROR",
+                  "messageDesc": "SFTP connector failed to write data to SFTP Server"
+                }
+              }
+            },
+            "RSC6233": {
+              "locales": {
+                "en-US": {
+                  "messageText": "SFTP Folder has submitted task to process object = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "SFTP Folder connector finished - pushed message to Inbound Topic."
+                }
+              }
+            },
+            "RSC6234": {
+              "locales": {
+                "en-US": {
+                  "messageText": "SFTP connector with name [{}] has started",
+                  "messageType": "INFO",
+                  "messageDesc": "SFTP connector started."
+                }
+              }
+            },
+            "RSC6235": {
+              "locales": {
+                "en-US": {
+                  "messageText": "SFTP connector: writeStream Successfully put record of size: {} bytes",
+                  "messageType": "INFO",
+                  "messageDesc": "SFTP connector: writeStream Successfully put record."
+                }
+              }
+            },
+            "RSC7000": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure EventHub connector with name [%s] has started",
+                  "messageType": "INFO",
+                  "messageDesc": "Azure EventHub connector started."
+                }
+              }
+            },
+            "RSC7001": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure EventHub connector: writeStream Successfully put record of size: {} bytes to topic: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Azure EventHub connector: writeStream Successfully put record."
+                }
+              }
+            },
+            "RSC7002": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure EventHub with name [%s] has submitted a message",
+                  "messageType": "INFO",
+                  "messageDesc": "Kinesis Stream connector successfully pushed message to Kinesis Stream."
+                }
+              }
+            },
+            "RSC7003": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure Blob Container connector has submitted task to process object = %s",
+                  "messageType": "INFO",
+                  "messageDesc": "Azure Blob Container finished - pushed message to Inbound Topic."
+                }
+              }
+            },
+            "RSC7004": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Downloading blob [{}] from container [{}]",
+                  "messageType": "INFO",
+                  "messageDesc": "Downloading blob from Azure Blob Container."
+                }
+              }
+            },
+            "RSC7005": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Listing objects of Azure Blob Container bucket {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Listening objects of Azure Blob Container."
+                }
+              }
+            },
+            "RSC7006": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure EventHub: reading and processing data of size {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Azure EventHub: reading and processing data"
+                }
+              }
+            },
+            "RSC7007": {
+              "locales": {
+                "en-US": {
+                  "messageText": "SmartExcelLoader load took = [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Service call performance tag"
+                }
+              }
+            },
+            "RSC7008": {
+              "locales": {
+                "en-US": {
+                  "messageText": "SmartExcelLoader flush took = [{}]",
+                  "messageType": "ERROR",
+                  "messageDesc": "Service call performance tag"
+                }
+              }
+            },
+            "RSC7009": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure Blob connector with name [%s] has started",
+                  "messageType": "INFO",
+                  "messageDesc": "Azure Blob connector started."
+                }
+              }
+            },
+            "RSC7010": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure Blob connector: Successfully put record of size: %s bytes to container: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Azure Blob connector: Successfully put record."
+                }
+              }
+            },
+            "RSC7011": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Azure is disabled for Tenant {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Azure is disabled for Tenant."
+                }
+              }
+            },
+            "RSC7012": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Field {} is not specified in profile {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Field is missing in profile."
+                }
+              }
+            },
+            "RSC7013": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Processing profile {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Processing profile."
+                }
+              }
+            },
+            "RSC7014": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Profile path is {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Processing profile."
+                }
+              }
+            },
+            "RSC7015": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error occurred during profile load. {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "Processing profile."
+                }
+              }
+            },
+            "RSC7016": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Kinesis Stream connector reading and processing data of size {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Kinesis Stream connector reading and processing data."
+                }
+              }
+            },
+            "RSC7017": {
+              "locales": {
+                "en-US": {
+                  "messageText": "URL connector publish message is empty with entitiesData = {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "URL connector publish message is empty"
+                }
+              }
+            },
+            "RSC7018": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Connector published failed for flowtask = %s",
+                  "messageType": "ERROR",
+                  "messageDesc": "Connector published failed for flowtask"
+                }
+              }
+            },
+            "RSC7019": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Listing objects of Azure blob container: {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Listening objects of Azure blob container."
+                }
+              }
+            },
+            "RSC7100": {
+              "locales": {
+                "en-US": {
+                  "messageText": "XmlRecordTransformer: Failed to get child records: excecption is : {}",
+                  "messageType": "ERROR",
+                  "messageDesc": "XmlRecordTransformer: Failed to get child records."
+                }
+              }
+            },
+            "RSC7101": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Xml Schema validation error.",
+                  "messageType": "ERROR",
+                  "messageDesc": "Xml Schema validation error."
+                }
+              }
+            },
+            "RSC7102": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Xml Schema is unavailable. Input xml file can't be validated.",
+                  "messageType": "WARN",
+                  "messageDesc": "Xml Schema is unavailable. Input xml file can't be validated."
+                }
+              }
+            },
+            "RSC7103": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Xml Extractor failed on close()",
+                  "messageType": "ERROR",
+                  "messageDesc": "Xml Extractor failed on close()"
+                }
+              }
+            },
+            "RSC7104": {
+              "locales": {
+                "en-US": {
+                  "messageText": "KeyValue cache exception",
+                  "messageType": "ERROR",
+                  "messageDesc": "Exception occurred while caching key value pair."
+                }
+              }
+            },
+            "RSC7105": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Log InComing request : {}",
+                  "messageType": "INFO",
+                  "messageDesc": "Log incoimng request."
+                }
+              }
+            },
+            "RSC7200": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Error in method: {}, message: {}",
+                  "messageType": "WARN",
+                  "messageDesc": "Failed."
+                }
+              }
+            },
+            "RSC7201": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Incoming request to Bolt : {}",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Incoming request to Bolt"
+                }
+              }
+            },
+            "RSC7202": {
+              "locales": {
+                "en-US": {
+                  "messageText": "InComing request log : ",
+                  "messageType": "DEBUG",
+                  "messageDesc": "InComing request log"
+                }
+              }
+            },
+            "RSC7203": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Request to RDP : ",
+                  "messageType": "DEBUG",
+                  "messageDesc": "Request to RDP"
+                }
+              }
+            },
+            "RSC7204": {
+              "locales": {
+                "en-US": {
+                  "messageText": "Relationship error :",
+                  "messageType": "ERROR",
+                  "messageDesc": "Relationship error :"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

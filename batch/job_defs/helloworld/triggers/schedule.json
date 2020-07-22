@@ -1,0 +1,6 @@
+{    
+    "id": "event-consumer",
+    "type": "schedule",
+    "job_def": "helloworld",
+    "recurrence_interval": "PT1H"
+}

@@ -1,0 +1,10 @@
+{
+    "envSettings": {
+        "id": "helloworld",
+        "server": "https://rdwengg-az-dev2.riversand.com",
+        "userid": "rdwadmin@riversand.com",
+        "authid": "lryFBhv1R9KA3HMJZHPCdThtFODah1M1",
+        "authsecret": "Z6u26qromsQZsfjGC_7Ue5WaeN8driXf96_dCzNIGSA0B8NuuUoGKcqU8zmXbCkb",
+        "tenantid": "rdwengg-az-dev2"
+    }   
+}

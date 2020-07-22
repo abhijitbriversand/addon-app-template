@@ -1,0 +1,18 @@
+{
+  "artifactKey": "boxhub-syndication",
+  "components": {
+    "recordExtractors": {
+      "BOXRSJSON": {
+        "className": "com.riversand.connectors.boxhub.BoxOutboundExtractor"
+      },
+      "BOXRESPONSEJSON": {
+        "className": "com.riversand.connectors.boxhub.BoxInboundExtractor"
+      }
+    },
+    "recordLoaders": {
+      "BOXJSON": {
+        "className": "com.riversand.connectors.boxhub.BoxOutboundLoader"
+      }
+    }
+  }
+}

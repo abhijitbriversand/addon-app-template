@@ -1,0 +1,109 @@
+{
+  "executionContext": {
+    "tenantId": "connectorsedev",
+    "userId": "gdsnadmin@riversand.com",
+    "userRole": "admin",
+    "ownershipData": "Nike",
+    "originatingClientId": "rdpclient",
+    "clientId": "rdpclient"
+  },
+  "connectProfile": {
+    "id": "sys_export_connectors_box_syndicate_assets_base",
+    "name": "sys_export_connectors_box_syndicate_assets_base",
+    "type": "integrationprofile",
+    "integrationType": "System",
+    "isEnabled": "true",
+    "taskSubType": "SYNDICATE",
+    "isMergeableWithCustom": true,
+    "collect": {
+      "isBinaryStreamPersistent": "false",
+      "filter": {
+        "include": {
+          "queryFields": {
+            "attributes": []
+          },
+          "typesCriterion": {
+            "product": {
+              "queryFields": {
+                "relatedEntitiesRelationships": [
+                  "hasimages"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "channel": [
+        {
+          "settings": {
+            "type": "RSJSON",
+            "version": "1.1"
+          },
+          "type": "rdpConnector"
+        }
+      ],
+      "format": {
+        "settings": {
+          "encoding": "utf8",
+          "additionalSettings": {}
+        },
+        "type": "BOXRSJSON",
+        "version": "1.1"
+      }
+    },
+    "transform": {
+      "settings": {
+        "nullRecordTransformer": "true"
+      }
+    },
+    "publish": {
+      "isBinaryStreamPersistent": "false",
+      "format": {
+        "type": "BOXJSON",
+        "batchSize": 1,
+        "version": "1.1",
+        "settings": {
+          "channelSettings": {
+            "serviceSettings": {
+              "name": "Boxdotcom",
+              "id": "rs-boxhub",
+              "hub": "RSHub",
+              "isEnabled": "true",
+              "syndicationSourceContext": {
+                "contextName": "self",
+                "contextValue": "self"
+              },
+              "settings": {}
+            },
+            "syndicationServiceConfigSettings": {
+              "isEnabled": true,
+              "attributes": {
+                "serviceName": {
+                  "value": "Amazon Seller Central"
+                },
+                "serviceIdentifier": {
+                  "value": "d1576b4b-a6bd-4777-82f1-504403f49a33"
+                }
+              },
+              "serviceSettings": {
+                "settings": {},
+                "model": " "
+              }
+            },
+            "hubSettings": {
+              "authurl": "https://api.box.com/oauth2/token",
+              "baseurl": "https://upload.box.com/api/2.0/files/content",
+              "rsclientid": "itqlk0wtvb61uy12oj95p62ze37wk5xs",
+              "rsclientsecret": "CozYV61UETrS8JV67HgE6fKksPu9QvLm",
+              "publicKeyID": "znlljvfw",
+              "privateKey": "-----BEGIN ENCRYPTED PRIVATE KEY-----\nMIIFDjBABgkqhkiG9w0BBQ0wMzAbBgkqhkiG9w0BBQwwDgQImJzjCs79YW4CAggA\nMBQGCCqGSIb3DQMHBAh8nPSzQTMZ0wSCBMhoorarFvZDueUOKLpiuxi0s215Cn8z\nt7/uuuODqprH2aTZ5h8l2a+cghJc+JEBm/1eUJRdvTcBqPWQwyD/RlKgjgiDexg9\nh7CLVL7n8nWKzFdb8yqken5ivR88Iy8HSE1ds27BhrICGnHmtSG/7Dfpe2YeJsvI\nqDjcY/aPgy/nlzu8PW2dgZHLop6hLgKSRdXVLj3AQHsCDUqk0uqMhCz3UewK3cfR\npDjTfs21VMz6Rc/KPHT6zE9YZCCDnHqQvXkMlGXuUI491riCnrJES+5jxylHCMcm\nsjBqExwW7iBnQRJEzr+b3sbfndJYqw5Qn4Pfoa+svnTWeMDKyHHm4Klmz5ANCbtJ\nTo+SgWIFYjr1PT3OTfe3lun3xX5kCUU29ZRE9Mf3kkt8LGQsHfW4nDFWvKb3kTvb\nUJIg8FuKWZINmSzJY3lmTCnYfDycFkNdoUTQ+BA1B6+eqsG3VXK8Na6Plrknp3jp\nnK1m2BfvmI0DmL4CRlx3lzo62S+Ujt8QPZ6Hq8iN+jbwRPZbtiLUPg3f9QF/SEUy\nVQQJhvhVAwk3mIFDpx9btDi5Ay8HgJF55UKpkKXBp7/Z+DEBS1I1IazcnDyHcvR7\n9L/dHQDrBg+vDZyEUESsl1PxywSVhrP0UrETECDoU9sDA0/PoxcYgWMzoMhu6Gmx\nlPklc5eWw7EgeiJwaSE778w+4q5eThFDNB6PqGnH8Q7S0IInK82vp3ZzIbVfLMHc\no4YDdD4H4Wrso4XMplmLGSdt9O18h0a6SIC8VUuStpDKwTbSWdSZHtcWTFuDtkLI\nuCqmR9h90S97Jpa3YW0a1wuukA0/2hp+sjMei5S5Xi10C5PHjwEUl3hP/I1YDtbF\n1XaNbyGxAaCqBu0epyj2xjU6jibeyTF2tZVBi168aNsJgEp4JM2rUIFhe2innBgV\nl4ZjPlU0tGoPES2n1ONHl7j+0cBEQiFV3Qj9KERdJ9a+RCvmg8kaYisxupGEOfNy\ngntADsVG7RdWXQU1T7229F5aOzM8Qbao69qj/8awYR98GDFU13iJw/VZlLG6UmgH\nWlx6U6xPOGxhHzSXSVN4C97G3UxGv7eysPmDc0j4ymZ7l+Yo48qRDz5D0HAOqMV+\nEioK2djlEjw1++H3NCZk/cGwZim/sWlZ4yFtIFj0De8G3AjVoyXt8D0GtSVkKTXs\n8axzcnA4bQ8ykYH1iTedumLCIVy07OtnMZ7DBub4wqX0iv9OD5DVf3Oz/plM4guX\n0QgXt4gV4DpRoycbqnqjZ92ZR0C8JUhJxVyPG0KQHfWYrf1JkBVen/sul7eWb2/V\niFBOzWJsPnJKUZV8zGnh106MmdrJr2u7UZLu5gGoqnzZXbojIReH2JW2i3mSo6yZ\nJTEM3lO01aP0iPq5kHPmY6WiiNWoI2SGzIoHuaC+cQrvxMaCDcw7KLuC2mjPA16t\njUcCSoMN00Jn0eCAXRQtSB27W/lrbixadsUTd5cMnkwp79htHSC3/tbURH0fS5vF\nGh9fu/xaCtmhn4vV7Js8EHjNHVnklaZ7YBGVuhAQg17xOWUYNxk9AkOG7ykUgEfW\nXrGI7G2DBcx5f3+F+frmdyDLF8RAEIR7B0ZfpAU+QHIfgahOFM2AGA3e5CXcbIpu\nWxc=\n-----END ENCRYPTED PRIVATE KEY-----\n",
+              "passphrase": "42e8a526027edbaaa4587b17f6afdc90",
+              "enterpriseID": "163735322"
+            }
+          },
+          "additionalSettings": {}
+        }
+      }
+    }
+  }
+}
